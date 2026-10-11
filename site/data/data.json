@@ -1,14 +1,141 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-10-11T23:37:17.304Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
   "priorityCounts": [
-    { "priority": "p1", "label": "P1", "count": 0 },
-    { "priority": "p2", "label": "P2", "count": 0 },
-    { "priority": "p3", "label": "P3", "count": 0 },
-    { "priority": "p4", "label": "P4", "count": 0 }
+    {
+      "priority": "p1",
+      "label": "P1",
+      "count": 0
+    },
+    {
+      "priority": "p2",
+      "label": "P2",
+      "count": 0
+    },
+    {
+      "priority": "p3",
+      "label": "P3",
+      "count": 0
+    },
+    {
+      "priority": "p4",
+      "label": "P4",
+      "count": 0
+    }
   ],
-  "scheduleFeed": [],
+  "scheduleFeed": [
+    {
+      "id": "primary:Process Analytics & Improvement, 1st Deliverable (Group 6):2026-10-12T18:45:00.000Z",
+      "date": "2026-10-12",
+      "time": "20:45",
+      "title": "Process Analytics & Improvement, 1st Deliverable (Group 6)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1791830700000,
+      "start": "2026-10-12T18:45:00.000Z",
+      "end": "2026-10-12T20:15:00.000Z"
+    },
+    {
+      "id": "primary:M&A Lab: Roll-Up and Platform Strategies & Marketing the Deal - Teasers, NDAs and CIMs:2026-10-13T15:00:00.000Z",
+      "date": "2026-10-13",
+      "time": "17:00",
+      "title": "M&A Lab: Roll-Up and Platform Strategies & Marketing the Deal - Teasers, NDAs and CIMs",
+      "location": "Maria de Molina, 31, MM-601, Madrid",
+      "type": "event",
+      "sortKey": 1791903600000,
+      "start": "2026-10-13T15:00:00.000Z",
+      "end": "2026-10-13T17:50:00.000Z"
+    },
+    {
+      "id": "primary:PDAL_Pre (Operations Management):2026-10-13T18:45:00.000Z",
+      "date": "2026-10-13",
+      "time": "20:45",
+      "title": "PDAL_Pre (Operations Management)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1791917100000,
+      "start": "2026-10-13T18:45:00.000Z",
+      "end": "2026-10-13T20:15:00.000Z"
+    },
+    {
+      "id": "primary:Career Advising: Orientation Meeting with Galina Misnik:2026-10-14T10:45:00.000Z",
+      "date": "2026-10-14",
+      "time": "12:45",
+      "title": "Career Advising: Orientation Meeting with Galina Misnik",
+      "location": "Maria de Molina 31, room 305",
+      "type": "event",
+      "sortKey": 1791974700000,
+      "start": "2026-10-14T10:45:00.000Z",
+      "end": "2026-10-14T11:45:00.000Z"
+    },
+    {
+      "id": "primary:AI Workshop Session 3 (ONLINE, IE Connects):2026-10-15T14:00:00.000Z",
+      "date": "2026-10-15",
+      "time": "16:00",
+      "title": "AI Workshop Session 3 (ONLINE, IE Connects)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792072800000,
+      "start": "2026-10-15T14:00:00.000Z",
+      "end": "2026-10-15T15:00:00.000Z"
+    },
+    {
+      "id": "primary:AI Workshop Session 3 (face-to-face, IE Connects):2026-10-15T16:30:00.000Z",
+      "date": "2026-10-15",
+      "time": "18:30",
+      "title": "AI Workshop Session 3 (face-to-face, IE Connects)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792081800000,
+      "start": "2026-10-15T16:30:00.000Z",
+      "end": "2026-10-15T17:30:00.000Z"
+    },
+    {
+      "id": "primary:AI Workshop Session 4 (ONLINE, IE Connects):2026-10-16T14:00:00.000Z",
+      "date": "2026-10-16",
+      "time": "16:00",
+      "title": "AI Workshop Session 4 (ONLINE, IE Connects)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792159200000,
+      "start": "2026-10-16T14:00:00.000Z",
+      "end": "2026-10-16T15:00:00.000Z"
+    },
+    {
+      "id": "primary:AI Workshop Session 4 (face-to-face, IE Connects):2026-10-16T16:30:00.000Z",
+      "date": "2026-10-16",
+      "time": "18:30",
+      "title": "AI Workshop Session 4 (face-to-face, IE Connects)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792168200000,
+      "start": "2026-10-16T16:30:00.000Z",
+      "end": "2026-10-16T17:30:00.000Z"
+    },
+    {
+      "id": "primary:M&A Lab: Due Diligence Deep Dive Regulatory and ESG Integration & Family Firm Nuances:2026-10-20T15:00:00.000Z",
+      "date": "2026-10-20",
+      "time": "17:00",
+      "title": "M&A Lab: Due Diligence Deep Dive Regulatory and ESG Integration & Family Firm Nuances",
+      "location": "Maria de Molina, 31, MM-601, Madrid",
+      "type": "event",
+      "sortKey": 1792508400000,
+      "start": "2026-10-20T15:00:00.000Z",
+      "end": "2026-10-20T17:50:00.000Z"
+    },
+    {
+      "id": "primary:M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation:2026-10-27T16:00:00.000Z",
+      "date": "2026-10-27",
+      "time": "17:00",
+      "title": "M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation",
+      "location": "Maria de Molina, 31, MM-601, Madrid",
+      "type": "event",
+      "sortKey": 1793116800000,
+      "start": "2026-10-27T16:00:00.000Z",
+      "end": "2026-10-27T18:50:00.000Z"
+    }
+  ],
   "realDeadlines": []
 }
