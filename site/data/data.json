@@ -1,0 +1,14 @@
+{
+  "generatedAt": null,
+  "windowDays": 22,
+  "ieFeedConfigured": false,
+  "taskRows": [],
+  "priorityCounts": [
+    { "priority": "p1", "label": "P1", "count": 0 },
+    { "priority": "p2", "label": "P2", "count": 0 },
+    { "priority": "p3", "label": "P3", "count": 0 },
+    { "priority": "p4", "label": "P4", "count": 0 }
+  ],
+  "scheduleFeed": [],
+  "realDeadlines": []
+}
