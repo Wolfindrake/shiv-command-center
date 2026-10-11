@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Command Center</title>
+<meta name="description" content="Shiv's live schedule and task dashboard — tasks from Todoist, classes and deadlines from Google Calendar.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<style>
+/* ===== design plan =====
+   Layout: asymmetric bento grid — full-width "right now" hero, then a 4-up stat
+   row, then variable-span cards (deadlines / overdue drawer / day agenda),
+   each its own glass tile on a deep mesh-gradient ground. Same visual system
+   as the live claude.ai version of this dashboard — this is its standalone
+   mirror, refreshed on a schedule instead of queried live.
+   Color — Cyber-Luxe, committed dark (single theme, no light variant):
+     --bg zinc-950 ground · --lime "active now" · --purple assignments/deadlines
+     · --cyan routine class events · --rose high priority · --amber mid priority
+   Type: Space Grotesk (display) / Inter (body, UI) / JetBrains Mono (timestamps,
+   countdowns, dates — tabular figures read as data, not prose).
+*/
+:root{
+  --bg:#09090b;
+  --surface:rgba(255,255,255,.04);
+  --surface-hi:rgba(255,255,255,.065);
+  --border:rgba(255,255,255,.09);
+  --border-hi:rgba(255,255,255,.16);
+  --text:#f4f4f5;
+  --sub:#a1a1aa;
+  --faint:#5c5c66;
+
+  --lime:#b4f154;      --lime-bg:rgba(180,241,84,.13);     --lime-line:rgba(180,241,84,.3);
+  --purple:#c29dff;    --purple-bg:rgba(194,157,255,.14);  --purple-line:rgba(194,157,255,.32);
+  --cyan:#5fd4e0;       --cyan-bg:rgba(95,212,224,.13);     --cyan-line:rgba(95,212,224,.3);
+  --rose:#ff7a93;       --rose-bg:rgba(255,122,147,.14);    --rose-line:rgba(255,122,147,.32);
+  --amber:#ffb454;      --amber-bg:rgba(255,180,84,.14);    --amber-line:rgba(255,180,84,.3);
+  --gold:#f0d264;       --gold-bg:rgba(240,210,100,.13);    --gold-line:rgba(240,210,100,.3);
+
+  --font-display:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{
+  color:var(--text);font-family:var(--font-body);margin:0;min-height:100vh;
+  background:
+    radial-gradient(900px 480px at 88% -8%, rgba(194,157,255,.16), transparent 60%),
+    radial-gradient(760px 420px at -6% 18%, rgba(95,212,224,.12), transparent 60%),
+    radial-gradient(640px 360px at 50% 115%, rgba(180,241,84,.07), transparent 60%),
+    var(--bg);
+  background-attachment:fixed;
+}
+#app{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:24px 72px}
+a{color:var(--cyan)}
+::selection{background:var(--purple);color:#140b24}
+*:focus-visible{outline:2px solid var(--purple);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+
+.glass{
+  background:linear-gradient(180deg,var(--surface-hi),var(--surface));
+  border:1px solid var(--border);border-radius:26px;
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.bento .span-4{grid-column:1/-1}
+.bento .span-2{grid-column:span 2}
+.bento .span-1{grid-column:span 1}
+@media (max-width:700px){ .bento{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:460px){ .bento{grid-template-columns:1fr} .bento .span-1,.bento .span-2{grid-column:1/-1} }
+
+.hero{padding:22px 24px 20px;position:relative;overflow:hidden}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.hero-date{font-family:var(--font-mono);font-size:12px;color:var(--faint);letter-spacing:.06em;text-transform:uppercase}
+.refresh-pill{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-mono);font-size:11.5px;color:var(--lime);background:var(--lime-bg);border:1px solid var(--lime-line);padding:6px 11px 6px 9px;border-radius:99px;white-space:nowrap}
+.refresh-pill .ping{position:relative;width:7px;height:7px;border-radius:50%;background:var(--lime)}
+.refresh-pill .ping::after{content:'';position:absolute;inset:-5px;border-radius:50%;border:1.5px solid var(--lime);animation:ping 2.2s cubic-bezier(0,0,.2,1) infinite}
+.refresh-pill.stale{color:var(--amber);background:var(--amber-bg);border-color:var(--amber-line)}
+.refresh-pill.stale .ping{background:var(--amber)}
+.refresh-pill.stale .ping::after{border-color:var(--amber)}
+.refresh-pill.err{color:var(--rose);background:var(--rose-bg);border-color:var(--rose-line)}
+.refresh-pill.err .ping::after{display:none}
+@keyframes ping{75%,100%{transform:scale(2.1);opacity:0}}
+
+.status-row{display:flex;align-items:center;gap:13px;margin-top:20px}
+.status-dot{position:relative;width:13px;height:13px;border-radius:50%;flex:none;background:var(--faint)}
+.status-dot.live{background:var(--lime);box-shadow:0 0 16px 1px rgba(180,241,84,.55)}
+.status-dot.live::after{content:'';position:absolute;inset:-7px;border-radius:50%;border:2px solid var(--lime);animation:ping 1.8s cubic-bezier(0,0,.2,1) infinite}
+.status-dot.idle{background:var(--cyan);box-shadow:0 0 14px 1px rgba(95,212,224,.4)}
+.status-label{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.status-what{font-family:var(--font-display);font-weight:650;font-size:25px;letter-spacing:-.01em;text-wrap:balance;line-height:1.15}
+.status-when{font-family:var(--font-mono);font-size:12.5px;color:var(--sub);margin-top:4px}
+
+.next-line{margin-top:16px;padding-top:15px;border-top:1px solid var(--border);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.next-line .tag{font-size:10.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.next-line .what{font-weight:600;font-size:14.5px}
+.next-line .when{color:var(--sub);font-family:var(--font-mono);font-size:12px}
+.countdown{margin-left:auto;font-family:var(--font-mono);font-size:12.5px;color:var(--purple);background:var(--purple-bg);border:1px solid var(--purple-line);padding:5px 12px;border-radius:99px;font-weight:600;white-space:nowrap}
+
+.stat-tile{padding:16px 17px;display:flex;flex-direction:column;gap:7px}
+.stat-tile b{font-family:var(--font-display);font-size:28px;font-weight:650;font-variant-numeric:tabular-nums;line-height:1}
+.stat-tile span{font-size:12px;color:var(--sub)}
+.stat-tile.rose b{color:var(--rose)} .stat-tile.amber b{color:var(--amber)}
+.stat-tile.cyan b{color:var(--cyan)} .stat-tile.purple b{color:var(--purple)}
+.stat-tile.lime b{color:var(--lime)}
+
+.section-head{display:flex;align-items:center;gap:10px;padding:16px 18px 2px}
+.section-head h2{font-family:var(--font-display);font-size:15px;font-weight:650;margin:0;letter-spacing:-.005em;display:flex;align-items:center;gap:8px}
+.section-head .count{font-family:var(--font-mono);font-size:11px;color:var(--sub);background:rgba(255,255,255,.05);padding:2px 9px;border-radius:99px}
+.section-head .spacer{flex:1}
+.icon{width:16px;height:16px;flex:none}
+.icon.purple{color:var(--purple)} .icon.rose{color:var(--rose)} .icon.cyan{color:var(--cyan)} .icon.lime{color:var(--lime)}
+
+.deadline-row{display:flex;gap:14px;align-items:center;padding:13px 18px;margin:0 10px 10px;border-radius:17px;background:var(--purple-bg);border:1px solid var(--purple-line)}
+.deadline-row:last-child{margin-bottom:16px}
+.deadline-row .dnum{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--purple);min-width:44px;text-align:center;line-height:1.05}
+.deadline-row .dnum small{display:block;font-family:var(--font-mono);font-size:9.5px;font-weight:600;color:var(--sub);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+.deadline-row .dmeta{flex:1;min-width:0}
+.deadline-row .dtitle{font-weight:600;font-size:14px}
+.deadline-row .dsub{font-size:12px;color:var(--sub);margin-top:2px;font-family:var(--font-mono)}
+.deadline-row .dchip{font-family:var(--font-mono);font-size:11px;font-weight:700;padding:4px 11px;border-radius:99px;white-space:nowrap;background:var(--purple);color:#1c1030}
+
+.accordion-trigger{display:flex;align-items:center;gap:10px;width:100%;padding:14px 18px;background:none;border:none;color:var(--text);font-family:var(--font-body);font-size:13.5px;font-weight:600;cursor:pointer;text-align:left}
+.accordion-trigger .rose-chip{font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--rose);background:var(--rose-bg);border:1px solid var(--rose-line);padding:2px 9px;border-radius:99px}
+.accordion-trigger .chev{margin-left:auto;transition:transform .25s ease;color:var(--faint)}
+.accordion-trigger[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.accordion-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s cubic-bezier(.4,0,.2,1)}
+.accordion-body.open{grid-template-rows:1fr}
+.accordion-inner{overflow:hidden;min-height:0}
+
+.day-group{margin:4px 0 14px}
+.day-group:last-child{margin-bottom:0}
+.day-label{font-family:var(--font-mono);font-size:11.5px;font-weight:600;color:var(--sub);text-transform:uppercase;letter-spacing:.07em;margin:0 18px 9px;display:flex;align-items:center;gap:8px}
+.day-label .dot{width:6px;height:6px;border-radius:50%;background:var(--faint)}
+.day-label.today{color:var(--lime)}
+.day-label.today .dot{background:var(--lime);box-shadow:0 0 8px 0 rgba(180,241,84,.6)}
+.day-rows{margin:0 10px 6px;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.018);border:1px solid var(--border)}
+
+.row{display:flex;gap:13px;align-items:center;padding:12px 16px;transition:background .15s}
+.row+.row,.row+.task-row,.task-row+.row{border-top:1px solid var(--border)}
+.row:hover{background:rgba(255,255,255,.025)}
+.row .time{font-family:var(--font-mono);font-size:12px;color:var(--sub);min-width:46px;font-variant-numeric:tabular-nums}
+.row .bar{width:3px;align-self:stretch;border-radius:3px;min-height:20px;background:var(--cyan)}
+.row .body{flex:1;min-width:0}
+.row .title{font-size:14px;font-weight:550}
+.row .loc{font-size:11.5px;color:var(--faint);margin-top:1px}
+.row .badge{font-family:var(--font-mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:7px;white-space:nowrap;background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-line)}
+
+.task-row{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;transition:transform .3s cubic-bezier(.34,1.56,.64,1),opacity .3s}
+.task-row.just-checked{animation:taskPop .45s cubic-bezier(.34,1.56,.64,1)}
+@keyframes taskPop{0%{transform:scale(1)}35%{transform:scale(1.025)}70%{transform:scale(.975)}100%{transform:scale(1)}}
+
+.check{width:21px;height:21px;border-radius:8px;border:1.5px solid var(--faint);flex:none;cursor:pointer;display:flex;align-items:center;justify-content:center;margin-top:1px;transition:.18s;background:transparent}
+.check:hover{border-color:var(--lime)}
+.check.on{background:linear-gradient(135deg,var(--lime),#86d93a);border-color:var(--lime)}
+.check svg{width:13px;height:13px;stroke:#0d1403;stroke-width:3;fill:none;opacity:0;transition:opacity .15s}
+.check.on svg{opacity:1}
+.task-row .body{flex:1;min-width:0}
+.task-row .title{position:relative;display:inline-block;font-size:13.5px;line-height:1.45}
+.task-row .title::after{content:'';position:absolute;left:0;right:0;top:50%;height:1.5px;width:0%;background:currentColor;transition:width .38s cubic-bezier(.4,0,.2,1)}
+.task-row.done .title{color:var(--faint)}
+.task-row.done .title::after{width:100%}
+.task-row .meta{display:flex;gap:7px;margin-top:5px;flex-wrap:wrap}
+.task-row .meta span{font-family:var(--font-mono);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:2.5px 8px;border-radius:6px;border:1px solid transparent}
+.task-row .proj{font-family:var(--font-mono);font-size:10px;color:var(--sub);background:rgba(255,255,255,.05);padding:2.5px 8px;border-radius:6px;font-weight:600}
+
+.empty{padding:30px 20px;text-align:center;color:var(--sub);font-size:13.5px}
+.empty b{display:block;color:var(--text);font-size:14.5px;margin-bottom:5px;font-family:var(--font-display);font-weight:600}
+.empty code{font-family:var(--font-mono);background:rgba(255,255,255,.06);padding:1px 6px;border-radius:5px;font-size:12px}
+
+.progress-wrap{display:flex;align-items:center;gap:9px}
+.progress-track{flex:1;height:5px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--lime));border-radius:99px;transition:width .5s cubic-bezier(.4,0,.2,1)}
+.progress-pct{font-family:var(--font-mono);font-size:11px;color:var(--sub);min-width:30px;text-align:right}
+
+.foot{text-align:center;color:var(--faint);font-size:11px;margin-top:26px;line-height:1.8;font-family:var(--font-mono)}
+.foot a{color:var(--faint)}
+
+@media (max-width:560px){
+  .hero{padding:18px}
+  .status-what{font-size:21px}
+  .countdown{margin-left:0}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="bento">
+    <div class="glass hero span-4">
+      <div class="hero-top">
+        <div class="hero-date" id="heroDate">—</div>
+        <div class="refresh-pill" id="refreshPill"><span class="ping"></span><span id="refreshText">loading…</span></div>
+      </div>
+      <div class="status-row">
+        <span class="status-dot" id="statusDot"></span>
+        <div style="min-width:0">
+          <div class="status-label">Right now</div>
+          <div class="status-what" id="statusWhat">Reading your day…</div>
+          <div class="status-when" id="statusWhen" style="display:none"></div>
+        </div>
+      </div>
+      <div class="next-line" id="nextLine" style="display:none"></div>
+    </div>
+
+    <div class="glass stat-tile span-1" id="statOverdue"><b>—</b><span>Needs attention</span></div>
+    <div class="glass stat-tile span-1" id="statToday"><b>—</b><span>Due today</span></div>
+    <div class="glass stat-tile span-1" id="statAhead"><b>—</b><span>Events ahead</span></div>
+    <div class="glass stat-tile span-1" id="statDeadlines"><b>—</b><span>Real deadlines</span></div>
+
+    <div class="glass span-4" id="deadlineSection" style="display:none">
+      <div class="section-head">
+        <h2><svg class="icon purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.6-6.3 4.6 2.3-7.2-6-4.6h7.6z"/></svg>Real deadlines</h2>
+        <span class="count" id="deadlineCount"></span>
+      </div>
+      <div id="deadlineList"></div>
+    </div>
+
+    <div class="glass span-4" id="overdueSection" style="display:none">
+      <button class="accordion-trigger" id="overdueToggle" aria-expanded="false">
+        <svg class="icon rose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 3"/></svg>
+        Past due <span class="rose-chip" id="overdueCount">0</span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="accordion-body" id="overdueBody"><div class="accordion-inner"><div id="overdueList" style="padding:0 10px 14px"></div></div></div>
+    </div>
+
+    <div class="glass span-4">
+      <div class="section-head">
+        <h2><svg class="icon cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>From tomorrow on</h2>
+        <div class="spacer"></div>
+        <div class="progress-wrap" style="width:130px" id="weekProgressWrap">
+          <div class="progress-track"><div class="progress-fill" id="weekProgressFill" style="width:0%"></div></div>
+          <span class="progress-pct" id="weekProgressPct">0%</span>
+        </div>
+      </div>
+      <div id="agendaList" style="padding-bottom:12px"></div>
+    </div>
+  </div>
+
+  <div class="foot" id="foot">
+    shiv's command center — standalone mirror, refreshed on a schedule · checkmarks save to this browser only<br>
+    <a href="https://github.com/Wolfindrake/shiv-command-center" target="_blank" rel="noopener">source on github</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var MADRID = "Europe/Madrid";
+  var DONE_KEY = "cc_done_v1";
+  var CONFETTI_COLORS = ["#b4f154","#c29dff","#5fd4e0","#ff7a93"];
+
+  var state = { data: null, done: {}, overdueOpen: false };
+
+  function $(id){ return document.getElementById(id); }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+
+  function loadDone(){
+    try { return JSON.parse(localStorage.getItem(DONE_KEY) || "{}"); } catch(e){ return {}; }
+  }
+  function saveDone(){
+    try { localStorage.setItem(DONE_KEY, JSON.stringify(state.done)); } catch(e){ /* storage unavailable, keep in-memory only */ }
+  }
+
+  function ymdMadrid(d){ return new Intl.DateTimeFormat("en-CA",{timeZone:MADRID,year:"numeric",month:"2-digit",day:"2-digit"}).format(d); }
+  function fmtDate(d, opts){ return new Intl.DateTimeFormat("en-GB", Object.assign({timeZone:MADRID}, opts)).format(d); }
+  function fmtTime(d){ return new Intl.DateTimeFormat("en-GB",{timeZone:MADRID,hour:"2-digit",minute:"2-digit"}).format(d); }
+  function startOfDayMadrid(d){
+    var parts = ymdMadrid(d);
+    var m = parseInt(parts.slice(5,7),10);
+    var off = (m>=4 && m<=10) ? "+02:00" : "+01:00";
+    return new Date(parts + "T00:00:00" + off);
+  }
+  function dayLabel(d, todayYmd, tomorrowYmd){
+    var y = ymdMadrid(d);
+    if (y===todayYmd) return "Today";
+    if (y===tomorrowYmd) return "Tomorrow";
+    return fmtDate(d,{weekday:"long", day:"numeric", month:"long"});
+  }
+
+  var now = new Date();
+  var todayStart = startOfDayMadrid(now);
+  var todayYmd = ymdMadrid(now);
+  var tomorrowStart = new Date(todayStart.getTime() + 24*3600*1000);
+  var tomorrowYmd = ymdMadrid(tomorrowStart);
+
+  function priorityColor(p){ return p==="p1" ? "var(--rose)" : p==="p2" ? "var(--amber)" : p==="p3" ? "var(--gold)" : "var(--cyan)"; }
+  function priorityBg(p){ return p==="p1" ? "var(--rose-bg)" : p==="p2" ? "var(--amber-bg)" : p==="p3" ? "var(--gold-bg)" : "var(--cyan-bg)"; }
+  function priorityBorder(p){ return p==="p1" ? "var(--rose-line)" : p==="p2" ? "var(--amber-line)" : p==="p3" ? "var(--gold-line)" : "var(--cyan-line)"; }
+  function priorityLabel(p){ return {p1:"P1",p2:"P2",p3:"P3",p4:"P4"}[p] || "P4"; }
+
+  function setRefresh(kind, text){
+    var pill = $("refreshPill");
+    pill.className = "refresh-pill" + (kind==="stale" ? " stale" : kind==="err" ? " err" : "");
+    $("refreshText").textContent = text;
+  }
+
+  // ---------- derived views over the fetched data ----------
+  function taskDueDate(t){ return t.due ? new Date(t.due.length>10 ? t.due : t.due+"T23:59:00") : null; }
+
+  function bucketTasks(){
+    var tasks = (state.data && state.data.taskRows) || [];
+    var overdue=[], today=[], forward=[];
+    tasks.forEach(function(t){
+      var d = taskDueDate(t);
+      if (!d) { forward.push(t); return; }
+      var y = ymdMadrid(d);
+      if (d < todayStart && y !== todayYmd) overdue.push(t);
+      else if (y === todayYmd) today.push(t);
+      else forward.push(t);
+    });
+    return {overdue:overdue, today:today, forward:forward};
+  }
+
+  function scheduleEvents(){
+    var rows = (state.data && state.data.scheduleFeed) || [];
+    return rows.filter(function(r){ return r.type!=="deadline"; }).map(function(r){
+      return { title:r.title, location:r.location, start:new Date(r.start||r.sortKey), end:new Date(r.end||r.sortKey), isClass:r.type==="class" };
+    }).sort(function(a,b){ return a.start-b.start; });
+  }
+
+  function realDeadlines(){
+    return ((state.data && state.data.realDeadlines) || []).map(function(d){
+      return { title:d.title, detail:d.detail, due:new Date(d.due) };
+    }).filter(function(d){ return d.due >= todayStart; }).sort(function(a,b){ return a.due-b.due; });
+  }
+
+  // ---------- rendering ----------
+  function render(){
+    renderHero();
+    renderStats();
+    renderDeadlines();
+    renderOverdue();
+    renderAgenda();
+  }
+
+  function renderHero(){
+    $("heroDate").textContent = fmtDate(now,{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+
+    if (!state.data){
+      $("statusWhat").textContent = "Reading your day…";
+      return;
+    }
+
+    if (!state.data.generatedAt){
+      setRefresh("err","never run yet");
+      $("statusDot").className = "status-dot";
+      $("statusWhat").textContent = "Waiting on the first data refresh";
+      $("statusWhen").style.display = "block";
+      $("statusWhen").textContent = "add your Todoist + calendar secrets, then run the workflow once — see the repo README";
+      $("nextLine").style.display = "none";
+      return;
+    }
+
+    var evs = scheduleEvents();
+    var current = evs.filter(function(e){ return e.start<=now && e.end>now; })[0];
+    var b = bucketTasks();
+    var evsForward = evs.filter(function(e){ return e.start >= tomorrowStart; });
+    var todaysRemaining = evs.filter(function(e){ return e.start >= now && e.start < tomorrowStart; });
+    var nextEvent = todaysRemaining[0] || evsForward[0];
+    var nextTask = (b.today.length ? b.today : b.overdue)[0];
+
+    var dot = $("statusDot"), what = $("statusWhat"), when = $("statusWhen");
+    if (current){
+      dot.className = "status-dot live";
+      what.textContent = current.title;
+      var endsIn = Math.max(1, Math.round((current.end-now)/60000));
+      when.style.display = "block";
+      when.textContent = (current.location ? current.location+" · " : "") + "ends in " + (endsIn<60?endsIn+"m":Math.round(endsIn/60)+"h");
+    } else {
+      dot.className = "status-dot idle";
+      what.textContent = "Free — focus time";
+      when.style.display = "none";
+    }
+
+    var nu = $("nextLine");
+    var showEvent = nextEvent && nextEvent!==current;
+    if (!showEvent && !nextTask){ nu.style.display = "none"; }
+    else {
+      nu.style.display = "flex";
+      var html = "";
+      if (showEvent){
+        var mins = Math.round((nextEvent.start-now)/60000);
+        var cd = mins<0 ? "in progress" : mins<60 ? ("in "+mins+"m") : mins<1440 ? ("in "+Math.round(mins/60)+"h") : ("in "+Math.round(mins/1440)+"d");
+        html += '<div><div class="tag">Next up</div><div class="what">'+esc(nextEvent.title)+'</div><div class="when">'+fmtDate(nextEvent.start,{weekday:"short",day:"numeric",month:"short"})+' · '+fmtTime(nextEvent.start)+(nextEvent.location?' · '+esc(nextEvent.location):'')+'</div></div><div class="countdown">'+cd+'</div>';
+      } else if (nextTask){
+        html += '<div><div class="tag">Top of mind</div><div class="what">'+esc(nextTask.content)+'</div><div class="when">'+priorityLabel(nextTask.priority)+' · '+(nextTask.due?fmtDate(taskDueDate(nextTask),{day:"numeric",month:"short"}):"no date")+'</div></div>';
+      }
+      nu.innerHTML = html;
+    }
+
+    var mins = Math.round((now - new Date(state.data.generatedAt))/60000);
+    var text = mins<2 ? "updated just now" : mins<60 ? ("updated "+mins+"m ago") : ("updated "+Math.round(mins/60)+"h ago");
+    setRefresh(mins>420 ? "stale" : "ok", text);
+  }
+
+  function statTile(id, n, cls){
+    var el = $(id);
+    var label = el.querySelector("span").outerHTML;
+    el.className = "glass stat-tile span-1" + (cls?(" "+cls):"");
+    el.innerHTML = '<b>'+n+'</b>' + label;
+  }
+
+  function renderStats(){
+    if (!state.data || !state.data.generatedAt) return;
+    var b = bucketTasks();
+    var evs = scheduleEvents();
+    var eventsAhead = evs.filter(function(e){ return e.start >= tomorrowStart; }).length;
+    var deadlines = realDeadlines().length;
+
+    statTile("statOverdue", b.overdue.length, b.overdue.length?"rose":"lime");
+    statTile("statToday", b.today.length, b.today.length?"amber":"lime");
+    statTile("statAhead", eventsAhead, "cyan");
+    statTile("statDeadlines", deadlines, deadlines?"purple":"lime");
+  }
+
+  function renderDeadlines(){
+    var deadlines = state.data && state.data.generatedAt ? realDeadlines() : [];
+    var sec = $("deadlineSection");
+    if (!deadlines.length){ sec.style.display="none"; return; }
+    sec.style.display="block";
+    $("deadlineCount").textContent = deadlines.length;
+    $("deadlineList").innerHTML = deadlines.map(function(d){
+      var days = Math.ceil((startOfDayMadrid(d.due)-todayStart)/86400000);
+      var whenLabel = days<=0?"today":days===1?"tomorrow":("in "+days+"d");
+      return '<div class="deadline-row">'+
+        '<div class="dnum">'+fmtDate(d.due,{day:"numeric"})+'<small>'+fmtDate(d.due,{month:"short"})+'</small></div>'+
+        '<div class="dmeta"><div class="dtitle">'+esc(d.title)+'</div><div class="dsub">'+fmtTime(d.due)+(d.detail?' · '+esc(d.detail):'')+'</div></div>'+
+        '<div class="dchip">'+whenLabel+'</div>'+
+      '</div>';
+    }).join("");
+  }
+
+  function taskRowHtml(t){
+    var done = !!state.done[t.id];
+    return '<div class="task-row'+(done?' done':'')+'" data-task="'+esc(t.id)+'">'+
+      '<div class="check'+(done?' on':'')+'" data-toggle="'+esc(t.id)+'"><svg viewBox="0 0 24 24"><polyline points="4 13 9 18 20 6"/></svg></div>'+
+      '<div class="body"><div class="title">'+esc(t.content)+'</div>'+
+      '<div class="meta"><span style="color:'+priorityColor(t.priority)+';background:'+priorityBg(t.priority)+';border-color:'+priorityBorder(t.priority)+'">'+priorityLabel(t.priority)+'</span>'+
+      (t.due?'<span class="proj">'+esc(fmtDate(taskDueDate(t),{day:"numeric",month:"short"}))+'</span>':'')+
+      (t.projectName?'<span class="proj">'+esc(t.projectName)+'</span>':'')+
+      '</div></div></div>';
+  }
+
+  function renderOverdue(){
+    var b = state.data && state.data.generatedAt ? bucketTasks() : {overdue:[]};
+    var sec = $("overdueSection");
+    if (!b.overdue.length){ sec.style.display="none"; return; }
+    sec.style.display="block";
+    $("overdueCount").textContent = b.overdue.length;
+    $("overdueList").innerHTML = b.overdue
+      .sort(function(a,b){ return (a.due||"").localeCompare(b.due||""); })
+      .map(taskRowHtml).join("");
+    $("overdueToggle").setAttribute("aria-expanded", state.overdueOpen ? "true" : "false");
+    $("overdueBody").className = "accordion-body" + (state.overdueOpen ? " open" : "");
+  }
+
+  function renderAgenda(){
+    var el = $("agendaList");
+
+    if (!state.data){
+      el.innerHTML = '<div class="empty"><b>Reading your day…</b></div>';
+      return;
+    }
+    if (!state.data.generatedAt){
+      el.innerHTML = '<div class="empty"><b>No data yet</b>This mirror hasn\'t run its first refresh. Add <code>TODOIST_API_TOKEN</code> and <code>GCAL_PRIMARY_ICS_URL</code> as repo secrets, then run the workflow from the Actions tab — the repo README walks through it.</div>';
+      setWeekProgress(0,0);
+      return;
+    }
+
+    var evs = scheduleEvents().filter(function(e){ return e.start >= tomorrowStart; });
+    var forwardTasks = bucketTasks().forward;
+
+    var byDay = {};
+    function dayKey(d){ return ymdMadrid(d); }
+    evs.forEach(function(e){ var k=dayKey(e.start); (byDay[k]=byDay[k]||{events:[],tasks:[]}).events.push(e); });
+    forwardTasks.forEach(function(t){ var d=taskDueDate(t); if(!d) return; var k=dayKey(d); if(d>=tomorrowStart){ (byDay[k]=byDay[k]||{events:[],tasks:[]}).tasks.push(t); } });
+
+    var days = Object.keys(byDay).sort();
+
+    if (!days.length){
+      var hint = state.data.ieFeedConfigured ? "" : " (the class/deadline feed isn't configured yet — see the README's optional <code>GCAL_IE_ICS_URL</code> step)";
+      el.innerHTML = '<div class="empty"><b>Nothing filed ahead yet</b>Once Todoist or your calendar has something coming up, it\'ll show up here, grouped by day'+hint+'.</div>';
+      setWeekProgress(0,0);
+      return;
+    }
+
+    var html = days.map(function(k){
+      var d = byDay[k];
+      var dateObj = new Date(k+"T12:00:00");
+      var label = dayLabel(dateObj, todayYmd, tomorrowYmd);
+      var isToday = label==="Today";
+      var rows = "";
+      d.events.sort(function(a,b){return a.start-b.start;}).forEach(function(e){
+        rows += '<div class="row"><div class="time">'+fmtTime(e.start)+'</div><div class="bar"'+(e.isClass?'':' style="background:var(--purple)"')+'></div><div class="body"><div class="title">'+esc(e.title)+'</div>'+(e.location?'<div class="loc">'+esc(e.location)+'</div>':'')+'</div></div>';
+      });
+      d.tasks.sort(function(a,b){return (a.due||"").localeCompare(b.due||"");}).forEach(function(t){
+        rows += taskRowHtml(t);
+      });
+      return '<div class="day-group"><div class="day-label'+(isToday?' today':'')+'"><span class="dot"></span>'+esc(label)+'</div><div class="day-rows">'+rows+'</div></div>';
+    }).join("");
+
+    el.innerHTML = html;
+
+    var all = bucketTasks();
+    var total = all.overdue.length + all.today.length;
+    var doneCount = Object.keys(state.done).filter(function(id){ return state.done[id]; }).length;
+    setWeekProgress(doneCount, Math.max(total, doneCount));
+  }
+
+  function setWeekProgress(done,total){
+    var pct = total ? Math.round(100*done/total) : 0;
+    $("weekProgressFill").style.width = pct+"%";
+    $("weekProgressPct").textContent = pct+"%";
+  }
+
+  // ---------- confetti ----------
+  function burstConfetti(el){
+    if (typeof confetti !== "function" || !el) return;
+    try{
+      var r = el.getBoundingClientRect();
+      confetti({
+        particleCount: 36, spread: 60, startVelocity: 32, gravity: 1.1, scalar: 0.75, ticks: 110,
+        colors: CONFETTI_COLORS,
+        origin: { x: (r.left + r.width/2) / window.innerWidth, y: (r.top + r.height/2) / window.innerHeight }
+      });
+    } catch(e){}
+  }
+
+  // ---------- events ----------
+  document.addEventListener("click", function(ev){
+    var chk = ev.target.closest && ev.target.closest(".check");
+    if (chk){
+      var id = chk.getAttribute("data-toggle");
+      toggleDone(id, chk);
+      return;
+    }
+    if (ev.target.closest && ev.target.closest("#overdueToggle")){
+      state.overdueOpen = !state.overdueOpen;
+      renderOverdue();
+    }
+  });
+
+  function toggleDone(id, chk){
+    var next = !state.done[id];
+    state.done[id] = next;
+    saveDone();
+    render();
+    if (next){
+      var row = document.querySelector('.task-row[data-task="'+CSS.escape(id)+'"]');
+      if (row){
+        burstConfetti(chk || row);
+        row.classList.add("just-checked");
+        row.addEventListener("animationend", function fn(){ row.classList.remove("just-checked"); row.removeEventListener("animationend", fn); });
+      }
+    }
+  }
+
+  // ---------- data loading ----------
+  async function init(){
+    state.done = loadDone();
+    render();
+    try{
+      var res = await fetch("./data/data.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("http "+res.status);
+      state.data = await res.json();
+    } catch(e){
+      state.data = { generatedAt: null, taskRows: [], scheduleFeed: [], realDeadlines: [] };
+      setRefresh("err","couldn't load data.json");
+    }
+    render();
+  }
+
+  init();
+  setInterval(render, 60000);
+})();
+</script>
+</body>
+</html>
