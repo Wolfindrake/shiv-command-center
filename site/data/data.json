@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T15:28:02.668Z",
+  "generatedAt": "2026-10-13T00:41:18.511Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Process Analytics & Improvement, 1st Deliverable (Group 6):2026-10-12T18:45:00.000Z",
-      "date": "2026-10-12",
-      "time": "20:45",
-      "title": "Process Analytics & Improvement, 1st Deliverable (Group 6)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1791830700000,
-      "start": "2026-10-12T18:45:00.000Z",
-      "end": "2026-10-12T20:15:00.000Z"
-    },
     {
       "id": "primary:M&A Lab: Roll-Up and Platform Strategies & Marketing the Deal - Teasers, NDAs and CIMs:2026-10-13T15:00:00.000Z",
       "date": "2026-10-13",
@@ -135,6 +124,17 @@
       "sortKey": 1793116800000,
       "start": "2026-10-27T16:00:00.000Z",
       "end": "2026-10-27T18:50:00.000Z"
+    },
+    {
+      "id": "primary:M&A Lab: Structuring the Right Deal I & II - Transaction Forms & Price-Risk Bridges:2026-11-03T16:00:00.000Z",
+      "date": "2026-11-03",
+      "time": "17:00",
+      "title": "M&A Lab: Structuring the Right Deal I & II - Transaction Forms & Price-Risk Bridges",
+      "location": "Maria de Molina, 13, Aula Magna, Madrid",
+      "type": "event",
+      "sortKey": 1793721600000,
+      "start": "2026-11-03T16:00:00.000Z",
+      "end": "2026-11-03T18:50:00.000Z"
     }
   ],
   "realDeadlines": []
