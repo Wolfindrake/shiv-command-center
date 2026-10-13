@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T14:13:20.332Z",
+  "generatedAt": "2026-10-13T18:39:10.230Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:M&A Lab: Roll-Up and Platform Strategies & Marketing the Deal - Teasers, NDAs and CIMs:2026-10-13T15:00:00.000Z",
-      "date": "2026-10-13",
-      "time": "17:00",
-      "title": "M&A Lab: Roll-Up and Platform Strategies & Marketing the Deal - Teasers, NDAs and CIMs",
-      "location": "Maria de Molina, 31, MM-601, Madrid",
-      "type": "event",
-      "sortKey": 1791903600000,
-      "start": "2026-10-13T15:00:00.000Z",
-      "end": "2026-10-13T17:50:00.000Z"
-    },
     {
       "id": "primary:PDAL_Pre (Operations Management):2026-10-13T18:45:00.000Z",
       "date": "2026-10-13",
@@ -137,6 +126,17 @@
       "end": "2026-10-16T17:30:00.000Z"
     },
     {
+      "id": "primary:Deep dive: Entrepreneurship:2026-10-17T11:00:00.000Z",
+      "date": "2026-10-17",
+      "time": "13:00",
+      "title": "Deep dive: Entrepreneurship",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792234800000,
+      "start": "2026-10-17T11:00:00.000Z",
+      "end": "2026-10-17T14:00:00.000Z"
+    },
+    {
       "id": "primary:M&A Lab: Due Diligence Deep Dive Regulatory and ESG Integration & Family Firm Nuances:2026-10-20T15:00:00.000Z",
       "date": "2026-10-20",
       "time": "17:00",
@@ -148,6 +148,17 @@
       "end": "2026-10-20T17:50:00.000Z"
     },
     {
+      "id": "primary:Deep dive: Innovation in a Digital World:2026-10-24T11:00:00.000Z",
+      "date": "2026-10-24",
+      "time": "13:00",
+      "title": "Deep dive: Innovation in a Digital World",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792839600000,
+      "start": "2026-10-24T11:00:00.000Z",
+      "end": "2026-10-24T14:00:00.000Z"
+    },
+    {
       "id": "primary:M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation:2026-10-27T16:00:00.000Z",
       "date": "2026-10-27",
       "time": "17:00",
@@ -157,6 +168,17 @@
       "sortKey": 1793116800000,
       "start": "2026-10-27T16:00:00.000Z",
       "end": "2026-10-27T18:50:00.000Z"
+    },
+    {
+      "id": "primary:Deep dive: Financial Markets:2026-10-31T12:00:00.000Z",
+      "date": "2026-10-31",
+      "time": "13:00",
+      "title": "Deep dive: Financial Markets",
+      "location": "",
+      "type": "event",
+      "sortKey": 1793448000000,
+      "start": "2026-10-31T12:00:00.000Z",
+      "end": "2026-10-31T15:00:00.000Z"
     },
     {
       "id": "primary:M&A Lab: Structuring the Right Deal I & II - Transaction Forms & Price-Risk Bridges:2026-11-03T16:00:00.000Z",
