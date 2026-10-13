@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T18:39:10.230Z",
+  "generatedAt": "2026-10-13T22:46:08.659Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,17 +27,6 @@
   ],
   "scheduleFeed": [
     {
-      "id": "primary:PDAL_Pre (Operations Management):2026-10-13T18:45:00.000Z",
-      "date": "2026-10-13",
-      "time": "20:45",
-      "title": "PDAL_Pre (Operations Management)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1791917100000,
-      "start": "2026-10-13T18:45:00.000Z",
-      "end": "2026-10-13T20:15:00.000Z"
-    },
-    {
       "id": "primary:Career Advising: Orientation Meeting with Galina Misnik:2026-10-14T10:45:00.000Z",
       "date": "2026-10-14",
       "time": "12:45",
@@ -47,6 +36,17 @@
       "sortKey": 1791974700000,
       "start": "2026-10-14T10:45:00.000Z",
       "end": "2026-10-14T11:45:00.000Z"
+    },
+    {
+      "id": "primary:Submit: Tharp Questions Peer Review (ISA Unlocking Creativity):2026-10-14T17:50:00.000Z",
+      "date": "2026-10-14",
+      "time": "19:50",
+      "title": "Submit: Tharp Questions Peer Review (ISA Unlocking Creativity)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792000200000,
+      "start": "2026-10-14T17:50:00.000Z",
+      "end": "2026-10-14T18:20:00.000Z"
     },
     {
       "id": "primary:Review: Entrepreneurship, Strategy & Pathway Panels:2026-10-14T18:20:00.000Z",
