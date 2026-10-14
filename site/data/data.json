@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T17:11:44.584Z",
+  "generatedAt": "2026-10-14T21:42:34.283Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,50 +27,6 @@
   ],
   "scheduleFeed": [
     {
-      "id": "primary:Submit: Tharp Questions Peer Review (ISA Unlocking Creativity):2026-10-14T17:50:00.000Z",
-      "date": "2026-10-14",
-      "time": "19:50",
-      "title": "Submit: Tharp Questions Peer Review (ISA Unlocking Creativity)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792000200000,
-      "start": "2026-10-14T17:50:00.000Z",
-      "end": "2026-10-14T18:20:00.000Z"
-    },
-    {
-      "id": "primary:Review: Entrepreneurship, Strategy & Pathway Panels:2026-10-14T18:20:00.000Z",
-      "date": "2026-10-14",
-      "time": "20:20",
-      "title": "Review: Entrepreneurship, Strategy & Pathway Panels",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792002000000,
-      "start": "2026-10-14T18:20:00.000Z",
-      "end": "2026-10-14T19:20:00.000Z"
-    },
-    {
-      "id": "primary:Break:2026-10-14T19:20:00.000Z",
-      "date": "2026-10-14",
-      "time": "21:20",
-      "title": "Break",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792005600000,
-      "start": "2026-10-14T19:20:00.000Z",
-      "end": "2026-10-14T19:35:00.000Z"
-    },
-    {
-      "id": "primary:Prep: ISA Moving People, Financial Markets, AI Workshops 3:2026-10-14T19:35:00.000Z",
-      "date": "2026-10-14",
-      "time": "21:35",
-      "title": "Prep: ISA Moving People, Financial Markets, AI Workshops 3",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792006500000,
-      "start": "2026-10-14T19:35:00.000Z",
-      "end": "2026-10-14T21:00:00.000Z"
-    },
-    {
       "id": "primary:AI Workshop Session 3 (ONLINE, IE Connects):2026-10-15T14:00:00.000Z",
       "date": "2026-10-15",
       "time": "16:00",
@@ -91,6 +47,28 @@
       "sortKey": 1792081800000,
       "start": "2026-10-15T16:30:00.000Z",
       "end": "2026-10-15T17:30:00.000Z"
+    },
+    {
+      "id": "primary:Review: ISA Moving People, Financial Markets, AI Workshops:2026-10-15T18:50:00.000Z",
+      "date": "2026-10-15",
+      "time": "20:50",
+      "title": "Review: ISA Moving People, Financial Markets, AI Workshops",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792090200000,
+      "start": "2026-10-15T18:50:00.000Z",
+      "end": "2026-10-15T19:45:00.000Z"
+    },
+    {
+      "id": "primary:Prep: ISA Shaping Futures, Operations Management:2026-10-15T19:45:00.000Z",
+      "date": "2026-10-15",
+      "time": "21:45",
+      "title": "Prep: ISA Shaping Futures, Operations Management",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792093500000,
+      "start": "2026-10-15T19:45:00.000Z",
+      "end": "2026-10-15T20:25:00.000Z"
     },
     {
       "id": "primary:AI Workshop Session 4 (ONLINE, IE Connects):2026-10-16T14:00:00.000Z",
