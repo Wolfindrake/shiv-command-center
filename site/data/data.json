@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T17:02:38.328Z",
+  "generatedAt": "2026-10-15T21:23:59.070Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,28 +27,6 @@
   ],
   "scheduleFeed": [
     {
-      "id": "primary:Review: ISA Moving People, Financial Markets, AI Workshops:2026-10-15T18:50:00.000Z",
-      "date": "2026-10-15",
-      "time": "20:50",
-      "title": "Review: ISA Moving People, Financial Markets, AI Workshops",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792090200000,
-      "start": "2026-10-15T18:50:00.000Z",
-      "end": "2026-10-15T19:45:00.000Z"
-    },
-    {
-      "id": "primary:Prep: ISA Shaping Futures, Operations Management:2026-10-15T19:45:00.000Z",
-      "date": "2026-10-15",
-      "time": "21:45",
-      "title": "Prep: ISA Shaping Futures, Operations Management",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792093500000,
-      "start": "2026-10-15T19:45:00.000Z",
-      "end": "2026-10-15T20:25:00.000Z"
-    },
-    {
       "id": "primary:AI Workshop Session 4 (ONLINE, IE Connects):2026-10-16T14:00:00.000Z",
       "date": "2026-10-16",
       "time": "16:00",
@@ -69,6 +47,17 @@
       "sortKey": 1792168200000,
       "start": "2026-10-16T16:30:00.000Z",
       "end": "2026-10-16T17:30:00.000Z"
+    },
+    {
+      "id": "primary:Review: ISA Shaping Futures, Operations Management, AI Workshops:2026-10-16T19:40:00.000Z",
+      "date": "2026-10-16",
+      "time": "21:40",
+      "title": "Review: ISA Shaping Futures, Operations Management, AI Workshops",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792179600000,
+      "start": "2026-10-16T19:40:00.000Z",
+      "end": "2026-10-16T20:30:00.000Z"
     },
     {
       "id": "primary:Deep dive: Entrepreneurship:2026-10-17T11:00:00.000Z",
