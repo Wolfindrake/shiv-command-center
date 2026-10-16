@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T11:26:15.837Z",
+  "generatedAt": "2026-10-16T16:40:45.237Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:AI Workshop Session 4 (ONLINE, IE Connects):2026-10-16T14:00:00.000Z",
-      "date": "2026-10-16",
-      "time": "16:00",
-      "title": "AI Workshop Session 4 (ONLINE, IE Connects)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792159200000,
-      "start": "2026-10-16T14:00:00.000Z",
-      "end": "2026-10-16T15:00:00.000Z"
-    },
-    {
-      "id": "primary:AI Workshop Session 4 (face-to-face, IE Connects):2026-10-16T16:30:00.000Z",
-      "date": "2026-10-16",
-      "time": "18:30",
-      "title": "AI Workshop Session 4 (face-to-face, IE Connects)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792168200000,
-      "start": "2026-10-16T16:30:00.000Z",
-      "end": "2026-10-16T17:30:00.000Z"
-    },
     {
       "id": "primary:Review: ISA Shaping Futures, Operations Management, AI Workshops:2026-10-16T19:40:00.000Z",
       "date": "2026-10-16",
@@ -124,6 +102,17 @@
       "sortKey": 1793721600000,
       "start": "2026-11-03T16:00:00.000Z",
       "end": "2026-11-03T18:50:00.000Z"
+    },
+    {
+      "id": "primary:Deep dive: Marketing Management:2026-11-07T12:00:00.000Z",
+      "date": "2026-11-07",
+      "time": "13:00",
+      "title": "Deep dive: Marketing Management",
+      "location": "",
+      "type": "event",
+      "sortKey": 1794052800000,
+      "start": "2026-11-07T12:00:00.000Z",
+      "end": "2026-11-07T15:00:00.000Z"
     }
   ],
   "realDeadlines": []
