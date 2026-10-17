@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T10:45:55.492Z",
+  "generatedAt": "2026-10-17T15:36:49.055Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Deep dive: Entrepreneurship:2026-10-17T11:00:00.000Z",
-      "date": "2026-10-17",
-      "time": "13:00",
-      "title": "Deep dive: Entrepreneurship",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792234800000,
-      "start": "2026-10-17T11:00:00.000Z",
-      "end": "2026-10-17T14:00:00.000Z"
-    },
     {
       "id": "primary:M&A Lab: Due Diligence Deep Dive Regulatory and ESG Integration & Family Firm Nuances:2026-10-20T15:00:00.000Z",
       "date": "2026-10-20",
