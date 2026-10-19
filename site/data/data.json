@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T04:42:29.802Z",
+  "generatedAt": "2026-10-19T13:18:25.019Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -58,6 +58,17 @@
       "sortKey": 1793116800000,
       "start": "2026-10-27T16:00:00.000Z",
       "end": "2026-10-27T18:50:00.000Z"
+    },
+    {
+      "id": "primary:Consulting Masterclass with Kashish Malhotra: Getting Started with Case Interviews:2026-10-29T16:00:00.000Z",
+      "date": "2026-10-29",
+      "time": "17:00",
+      "title": "Consulting Masterclass with Kashish Malhotra: Getting Started with Case Interviews",
+      "location": "Online Event (IE Connect)",
+      "type": "event",
+      "sortKey": 1793289600000,
+      "start": "2026-10-29T16:00:00.000Z",
+      "end": "2026-10-29T17:00:00.000Z"
     },
     {
       "id": "primary:Deep dive: Financial Markets:2026-10-31T12:00:00.000Z",
