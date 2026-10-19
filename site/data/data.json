@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T13:18:25.019Z",
+  "generatedAt": "2026-10-19T22:22:21.851Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -36,6 +36,17 @@
       "sortKey": 1792508400000,
       "start": "2026-10-20T15:00:00.000Z",
       "end": "2026-10-20T17:50:00.000Z"
+    },
+    {
+      "id": "primary:Review: Monday classes:2026-10-20T19:30:00.000Z",
+      "date": "2026-10-20",
+      "time": "21:30",
+      "title": "Review: Monday classes",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792524600000,
+      "start": "2026-10-20T19:30:00.000Z",
+      "end": "2026-10-20T20:30:00.000Z"
     },
     {
       "id": "primary:Deep dive: Innovation in a Digital World:2026-10-24T11:00:00.000Z",
@@ -102,6 +113,17 @@
       "sortKey": 1794052800000,
       "start": "2026-11-07T12:00:00.000Z",
       "end": "2026-11-07T15:00:00.000Z"
+    },
+    {
+      "id": "primary:Click! Starter Kata (Group 6):2026-11-10T19:45:00.000Z",
+      "date": "2026-11-10",
+      "time": "20:45",
+      "title": "Click! Starter Kata (Group 6)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1794339900000,
+      "start": "2026-11-10T19:45:00.000Z",
+      "end": "2026-11-10T20:45:00.000Z"
     }
   ],
   "realDeadlines": []
