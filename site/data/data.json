@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T11:38:56.821Z",
+  "generatedAt": "2026-10-20T17:08:33.802Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:M&A Lab: Due Diligence Deep Dive Regulatory and ESG Integration & Family Firm Nuances:2026-10-20T15:00:00.000Z",
-      "date": "2026-10-20",
-      "time": "17:00",
-      "title": "M&A Lab: Due Diligence Deep Dive Regulatory and ESG Integration & Family Firm Nuances",
-      "location": "Maria de Molina, 31, MM-601, Madrid",
-      "type": "event",
-      "sortKey": 1792508400000,
-      "start": "2026-10-20T15:00:00.000Z",
-      "end": "2026-10-20T17:50:00.000Z"
-    },
     {
       "id": "primary:Review: Monday classes:2026-10-20T19:30:00.000Z",
       "date": "2026-10-20",
