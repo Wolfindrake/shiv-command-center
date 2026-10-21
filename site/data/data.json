@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T17:13:59.972Z",
+  "generatedAt": "2026-10-21T21:43:58.800Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Review: Tuesday classes:2026-10-21T19:50:00.000Z",
-      "date": "2026-10-21",
-      "time": "21:50",
-      "title": "Review: Tuesday classes",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792612200000,
-      "start": "2026-10-21T19:50:00.000Z",
-      "end": "2026-10-21T20:30:00.000Z"
-    },
     {
       "id": "primary:Deep dive: Innovation in a Digital World:2026-10-24T11:00:00.000Z",
       "date": "2026-10-24",
