@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T17:11:57.172Z",
+  "generatedAt": "2026-10-22T21:37:08.926Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,6 +26,28 @@
     }
   ],
   "scheduleFeed": [
+    {
+      "id": "primary:Review: Strategy & ISA - Moving People:2026-10-23T12:50:00.000Z",
+      "date": "2026-10-23",
+      "time": "14:50",
+      "title": "Review: Strategy & ISA - Moving People",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792759800000,
+      "start": "2026-10-23T12:50:00.000Z",
+      "end": "2026-10-23T13:50:00.000Z"
+    },
+    {
+      "id": "primary:Prep: Entrepreneurship & Strategy:2026-10-23T14:05:00.000Z",
+      "date": "2026-10-23",
+      "time": "16:05",
+      "title": "Prep: Entrepreneurship & Strategy",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792764300000,
+      "start": "2026-10-23T14:05:00.000Z",
+      "end": "2026-10-23T15:20:00.000Z"
+    },
     {
       "id": "primary:Review: Financial Markets:2026-10-24T07:00:00.000Z",
       "date": "2026-10-24",
