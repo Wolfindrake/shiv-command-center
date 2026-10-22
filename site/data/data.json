@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T04:48:32.197Z",
+  "generatedAt": "2026-10-22T11:54:15.989Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,6 +27,17 @@
   ],
   "scheduleFeed": [
     {
+      "id": "primary:Review: Financial Markets:2026-10-24T07:00:00.000Z",
+      "date": "2026-10-24",
+      "time": "09:00",
+      "title": "Review: Financial Markets",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792825200000,
+      "start": "2026-10-24T07:00:00.000Z",
+      "end": "2026-10-24T10:00:00.000Z"
+    },
+    {
       "id": "primary:Deep dive: Innovation in a Digital World:2026-10-24T11:00:00.000Z",
       "date": "2026-10-24",
       "time": "13:00",
@@ -36,6 +47,83 @@
       "sortKey": 1792839600000,
       "start": "2026-10-24T11:00:00.000Z",
       "end": "2026-10-24T14:00:00.000Z"
+    },
+    {
+      "id": "primary:Entrepreneurship + M&A Lab: catch-up:2026-10-24T14:30:00.000Z",
+      "date": "2026-10-24",
+      "time": "16:30",
+      "title": "Entrepreneurship + M&A Lab: catch-up",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792852200000,
+      "start": "2026-10-24T14:30:00.000Z",
+      "end": "2026-10-24T16:00:00.000Z"
+    },
+    {
+      "id": "primary:Networking: Plug and Play research & outreach:2026-10-24T16:15:00.000Z",
+      "date": "2026-10-24",
+      "time": "18:15",
+      "title": "Networking: Plug and Play research & outreach",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792858500000,
+      "start": "2026-10-24T16:15:00.000Z",
+      "end": "2026-10-24T17:15:00.000Z"
+    },
+    {
+      "id": "primary:Airline consulting: research firms & roles:2026-10-24T17:30:00.000Z",
+      "date": "2026-10-24",
+      "time": "19:30",
+      "title": "Airline consulting: research firms & roles",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792863000000,
+      "start": "2026-10-24T17:30:00.000Z",
+      "end": "2026-10-24T18:30:00.000Z"
+    },
+    {
+      "id": "primary:Review: Financial Reporting & Analysis:2026-10-25T08:00:00.000Z",
+      "date": "2026-10-25",
+      "time": "09:00",
+      "title": "Review: Financial Reporting & Analysis",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792915200000,
+      "start": "2026-10-25T08:00:00.000Z",
+      "end": "2026-10-25T11:30:00.000Z"
+    },
+    {
+      "id": "primary:AI venture: develop concept:2026-10-25T12:00:00.000Z",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "title": "AI venture: develop concept",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792929600000,
+      "start": "2026-10-25T12:00:00.000Z",
+      "end": "2026-10-25T13:00:00.000Z"
+    },
+    {
+      "id": "primary:Google internship: application:2026-10-25T13:15:00.000Z",
+      "date": "2026-10-25",
+      "time": "14:15",
+      "title": "Google internship: application",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792934100000,
+      "start": "2026-10-25T13:15:00.000Z",
+      "end": "2026-10-25T14:00:00.000Z"
+    },
+    {
+      "id": "primary:Review Galina Misnik's message & plan:2026-10-25T14:15:00.000Z",
+      "date": "2026-10-25",
+      "time": "15:15",
+      "title": "Review Galina Misnik's message & plan",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792937700000,
+      "start": "2026-10-25T14:15:00.000Z",
+      "end": "2026-10-25T14:45:00.000Z"
     },
     {
       "id": "primary:M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation:2026-10-27T16:00:00.000Z",
