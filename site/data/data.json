@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T11:40:51.903Z",
+  "generatedAt": "2026-10-23T17:08:46.634Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Review: Strategy & ISA - Moving People:2026-10-23T12:50:00.000Z",
-      "date": "2026-10-23",
-      "time": "14:50",
-      "title": "Review: Strategy & ISA - Moving People",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792759800000,
-      "start": "2026-10-23T12:50:00.000Z",
-      "end": "2026-10-23T13:50:00.000Z"
-    },
-    {
-      "id": "primary:Prep: Entrepreneurship & Strategy:2026-10-23T14:05:00.000Z",
-      "date": "2026-10-23",
-      "time": "16:05",
-      "title": "Prep: Entrepreneurship & Strategy",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792764300000,
-      "start": "2026-10-23T14:05:00.000Z",
-      "end": "2026-10-23T15:20:00.000Z"
-    },
     {
       "id": "primary:Review: Financial Markets:2026-10-24T07:00:00.000Z",
       "date": "2026-10-24",
@@ -212,6 +190,17 @@
       "sortKey": 1794339900000,
       "start": "2026-11-10T19:45:00.000Z",
       "end": "2026-11-10T20:45:00.000Z"
+    },
+    {
+      "id": "primary:Deep dive: Financial Reporting and Analysis:2026-11-14T12:00:00.000Z",
+      "date": "2026-11-14",
+      "time": "13:00",
+      "title": "Deep dive: Financial Reporting and Analysis",
+      "location": "",
+      "type": "event",
+      "sortKey": 1794657600000,
+      "start": "2026-11-14T12:00:00.000Z",
+      "end": "2026-11-14T15:00:00.000Z"
     }
   ],
   "realDeadlines": []
