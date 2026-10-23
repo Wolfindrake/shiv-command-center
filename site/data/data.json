@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T17:08:46.634Z",
+  "generatedAt": "2026-10-23T21:25:28.175Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -80,6 +80,28 @@
       "sortKey": 1792863000000,
       "start": "2026-10-24T17:30:00.000Z",
       "end": "2026-10-24T18:30:00.000Z"
+    },
+    {
+      "id": "primary:Rest:2026-10-24T18:30:00.000Z",
+      "date": "2026-10-24",
+      "time": "20:30",
+      "title": "Rest",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792866600000,
+      "start": "2026-10-24T18:30:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z"
+    },
+    {
+      "id": "primary:Review: Saturday:2026-10-24T19:30:00.000Z",
+      "date": "2026-10-24",
+      "time": "21:30",
+      "title": "Review: Saturday",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792870200000,
+      "start": "2026-10-24T19:30:00.000Z",
+      "end": "2026-10-24T20:30:00.000Z"
     },
     {
       "id": "primary:Review: Financial Reporting & Analysis:2026-10-25T08:00:00.000Z",
