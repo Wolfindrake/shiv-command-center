@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T04:38:22.918Z",
+  "generatedAt": "2026-10-24T11:02:45.908Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Review: Financial Markets:2026-10-24T07:00:00.000Z",
-      "date": "2026-10-24",
-      "time": "09:00",
-      "title": "Review: Financial Markets",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792825200000,
-      "start": "2026-10-24T07:00:00.000Z",
-      "end": "2026-10-24T10:00:00.000Z"
-    },
-    {
-      "id": "primary:Deep dive: Innovation in a Digital World:2026-10-24T11:00:00.000Z",
-      "date": "2026-10-24",
-      "time": "13:00",
-      "title": "Deep dive: Innovation in a Digital World",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792839600000,
-      "start": "2026-10-24T11:00:00.000Z",
-      "end": "2026-10-24T14:00:00.000Z"
-    },
     {
       "id": "primary:Entrepreneurship + M&A Lab: catch-up:2026-10-24T14:30:00.000Z",
       "date": "2026-10-24",
@@ -91,6 +69,28 @@
       "sortKey": 1792866600000,
       "start": "2026-10-24T18:30:00.000Z",
       "end": "2026-10-24T19:30:00.000Z"
+    },
+    {
+      "id": "primary:Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?:2026-10-24T19:00:00.000Z",
+      "date": "2026-10-24",
+      "time": "21:00",
+      "title": "Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792868400000,
+      "start": "2026-10-24T19:00:00.000Z",
+      "end": "2026-10-24T19:15:00.000Z"
+    },
+    {
+      "id": "primary:Follow-up: did Maximo reply to the Entrepreneurship Club email?:2026-10-24T19:00:00.000Z",
+      "date": "2026-10-24",
+      "time": "21:00",
+      "title": "Follow-up: did Maximo reply to the Entrepreneurship Club email?",
+      "location": "",
+      "type": "event",
+      "sortKey": 1792868400000,
+      "start": "2026-10-24T19:00:00.000Z",
+      "end": "2026-10-24T19:15:00.000Z"
     },
     {
       "id": "primary:Review: Saturday:2026-10-24T19:30:00.000Z",
