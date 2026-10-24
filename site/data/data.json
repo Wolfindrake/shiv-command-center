@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T11:02:45.908Z",
+  "generatedAt": "2026-10-24T15:57:42.955Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Entrepreneurship + M&A Lab: catch-up:2026-10-24T14:30:00.000Z",
-      "date": "2026-10-24",
-      "time": "16:30",
-      "title": "Entrepreneurship + M&A Lab: catch-up",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792852200000,
-      "start": "2026-10-24T14:30:00.000Z",
-      "end": "2026-10-24T16:00:00.000Z"
-    },
     {
       "id": "primary:Networking: Plug and Play research & outreach:2026-10-24T16:15:00.000Z",
       "date": "2026-10-24",
@@ -71,10 +60,10 @@
       "end": "2026-10-24T19:30:00.000Z"
     },
     {
-      "id": "primary:Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?:2026-10-24T19:00:00.000Z",
+      "id": "primary:Follow-up: did Maximo reply to the Entrepreneurship Club email?:2026-10-24T19:00:00.000Z",
       "date": "2026-10-24",
       "time": "21:00",
-      "title": "Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?",
+      "title": "Follow-up: did Maximo reply to the Entrepreneurship Club email?",
       "location": "",
       "type": "event",
       "sortKey": 1792868400000,
@@ -82,10 +71,10 @@
       "end": "2026-10-24T19:15:00.000Z"
     },
     {
-      "id": "primary:Follow-up: did Maximo reply to the Entrepreneurship Club email?:2026-10-24T19:00:00.000Z",
+      "id": "primary:Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?:2026-10-24T19:00:00.000Z",
       "date": "2026-10-24",
       "time": "21:00",
-      "title": "Follow-up: did Maximo reply to the Entrepreneurship Club email?",
+      "title": "Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?",
       "location": "",
       "type": "event",
       "sortKey": 1792868400000,
