@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T15:57:42.955Z",
+  "generatedAt": "2026-10-24T20:51:17.611Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,72 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Networking: Plug and Play research & outreach:2026-10-24T16:15:00.000Z",
-      "date": "2026-10-24",
-      "time": "18:15",
-      "title": "Networking: Plug and Play research & outreach",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792858500000,
-      "start": "2026-10-24T16:15:00.000Z",
-      "end": "2026-10-24T17:15:00.000Z"
-    },
-    {
-      "id": "primary:Airline consulting: research firms & roles:2026-10-24T17:30:00.000Z",
-      "date": "2026-10-24",
-      "time": "19:30",
-      "title": "Airline consulting: research firms & roles",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792863000000,
-      "start": "2026-10-24T17:30:00.000Z",
-      "end": "2026-10-24T18:30:00.000Z"
-    },
-    {
-      "id": "primary:Rest:2026-10-24T18:30:00.000Z",
-      "date": "2026-10-24",
-      "time": "20:30",
-      "title": "Rest",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792866600000,
-      "start": "2026-10-24T18:30:00.000Z",
-      "end": "2026-10-24T19:30:00.000Z"
-    },
-    {
-      "id": "primary:Follow-up: did Maximo reply to the Entrepreneurship Club email?:2026-10-24T19:00:00.000Z",
-      "date": "2026-10-24",
-      "time": "21:00",
-      "title": "Follow-up: did Maximo reply to the Entrepreneurship Club email?",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792868400000,
-      "start": "2026-10-24T19:00:00.000Z",
-      "end": "2026-10-24T19:15:00.000Z"
-    },
-    {
-      "id": "primary:Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?:2026-10-24T19:00:00.000Z",
-      "date": "2026-10-24",
-      "time": "21:00",
-      "title": "Follow-up: did Emilio reply to the Tech &amp; Innovation Club email?",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792868400000,
-      "start": "2026-10-24T19:00:00.000Z",
-      "end": "2026-10-24T19:15:00.000Z"
-    },
-    {
-      "id": "primary:Review: Saturday:2026-10-24T19:30:00.000Z",
-      "date": "2026-10-24",
-      "time": "21:30",
-      "title": "Review: Saturday",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792870200000,
-      "start": "2026-10-24T19:30:00.000Z",
-      "end": "2026-10-24T20:30:00.000Z"
-    },
     {
       "id": "primary:Review: Financial Reporting & Analysis:2026-10-25T08:00:00.000Z",
       "date": "2026-10-25",
