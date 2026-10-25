@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T04:42:57.979Z",
+  "generatedAt": "2026-10-25T11:32:02.650Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Review: Financial Reporting & Analysis:2026-10-25T08:00:00.000Z",
-      "date": "2026-10-25",
-      "time": "09:00",
-      "title": "Review: Financial Reporting & Analysis",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792915200000,
-      "start": "2026-10-25T08:00:00.000Z",
-      "end": "2026-10-25T11:30:00.000Z"
-    },
     {
       "id": "primary:AI venture: develop concept:2026-10-25T12:00:00.000Z",
       "date": "2026-10-25",
