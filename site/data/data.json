@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T11:32:02.650Z",
+  "generatedAt": "2026-10-25T16:21:38.412Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,39 +27,6 @@
   ],
   "scheduleFeed": [
     {
-      "id": "primary:AI venture: develop concept:2026-10-25T12:00:00.000Z",
-      "date": "2026-10-25",
-      "time": "13:00",
-      "title": "AI venture: develop concept",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792929600000,
-      "start": "2026-10-25T12:00:00.000Z",
-      "end": "2026-10-25T13:00:00.000Z"
-    },
-    {
-      "id": "primary:Google internship: application:2026-10-25T13:15:00.000Z",
-      "date": "2026-10-25",
-      "time": "14:15",
-      "title": "Google internship: application",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792934100000,
-      "start": "2026-10-25T13:15:00.000Z",
-      "end": "2026-10-25T14:00:00.000Z"
-    },
-    {
-      "id": "primary:Review Galina Misnik's message & plan:2026-10-25T14:15:00.000Z",
-      "date": "2026-10-25",
-      "time": "15:15",
-      "title": "Review Galina Misnik's message & plan",
-      "location": "",
-      "type": "event",
-      "sortKey": 1792937700000,
-      "start": "2026-10-25T14:15:00.000Z",
-      "end": "2026-10-25T14:45:00.000Z"
-    },
-    {
       "id": "primary:Work: Thinking Critically reflective journal:2026-10-26T18:00:00.000Z",
       "date": "2026-10-26",
       "time": "19:00",
@@ -68,7 +35,7 @@
       "type": "event",
       "sortKey": 1793037600000,
       "start": "2026-10-26T18:00:00.000Z",
-      "end": "2026-10-26T19:00:00.000Z"
+      "end": "2026-10-26T18:30:00.000Z"
     },
     {
       "id": "primary:M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation:2026-10-27T16:00:00.000Z",
@@ -82,15 +49,15 @@
       "end": "2026-10-27T18:50:00.000Z"
     },
     {
-      "id": "primary:DUE: Thinking Critically, Reflective journal (Block 1):2026-10-28T22:29:00.000Z",
+      "id": "primary:DUE: Thinking Critically, Reflective journal (Block 1):2026-10-28T00:00:00.000Z",
       "date": "2026-10-28",
-      "time": "23:29",
+      "time": "All day",
       "title": "DUE: Thinking Critically, Reflective journal (Block 1)",
       "location": "",
       "type": "event",
-      "sortKey": 1793226540000,
-      "start": "2026-10-28T22:29:00.000Z",
-      "end": "2026-10-28T22:59:00.000Z"
+      "sortKey": 1793145600000,
+      "start": "2026-10-28T00:00:00.000Z",
+      "end": "2026-10-29T00:00:00.000Z"
     },
     {
       "id": "primary:Consulting Masterclass with Kashish Malhotra: Getting Started with Case Interviews:2026-10-29T16:00:00.000Z",
@@ -115,6 +82,17 @@
       "end": "2026-10-31T15:00:00.000Z"
     },
     {
+      "id": "primary:Work: Benihana Simulation (Operations Mgmt):2026-11-02T09:00:00.000Z",
+      "date": "2026-11-02",
+      "time": "10:00",
+      "title": "Work: Benihana Simulation (Operations Mgmt)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1793610000000,
+      "start": "2026-11-02T09:00:00.000Z",
+      "end": "2026-11-02T10:30:00.000Z"
+    },
+    {
       "id": "primary:M&A Lab: Structuring the Right Deal I & II - Transaction Forms & Price-Risk Bridges:2026-11-03T16:00:00.000Z",
       "date": "2026-11-03",
       "time": "17:00",
@@ -124,6 +102,17 @@
       "sortKey": 1793721600000,
       "start": "2026-11-03T16:00:00.000Z",
       "end": "2026-11-03T18:50:00.000Z"
+    },
+    {
+      "id": "primary:DUE: Operations Mgmt, Benihana Simulation:2026-11-04T00:00:00.000Z",
+      "date": "2026-11-04",
+      "time": "All day",
+      "title": "DUE: Operations Mgmt, Benihana Simulation",
+      "location": "",
+      "type": "event",
+      "sortKey": 1793750400000,
+      "start": "2026-11-04T00:00:00.000Z",
+      "end": "2026-11-05T00:00:00.000Z"
     },
     {
       "id": "primary:Deep dive: Marketing Management:2026-11-07T12:00:00.000Z",
@@ -146,6 +135,17 @@
       "sortKey": 1794339900000,
       "start": "2026-11-10T19:45:00.000Z",
       "end": "2026-11-10T20:45:00.000Z"
+    },
+    {
+      "id": "primary:DUE: Operations Mgmt, Click! Starter Kata:2026-11-12T00:00:00.000Z",
+      "date": "2026-11-12",
+      "time": "All day",
+      "title": "DUE: Operations Mgmt, Click! Starter Kata",
+      "location": "",
+      "type": "event",
+      "sortKey": 1794441600000,
+      "start": "2026-11-12T00:00:00.000Z",
+      "end": "2026-11-13T00:00:00.000Z"
     },
     {
       "id": "primary:Deep dive: Financial Reporting and Analysis:2026-11-14T12:00:00.000Z",
