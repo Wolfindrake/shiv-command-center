@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T13:05:02.724Z",
+  "generatedAt": "2026-10-26T22:41:00.543Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Work: Thinking Critically reflective journal:2026-10-26T18:00:00.000Z",
-      "date": "2026-10-26",
-      "time": "19:00",
-      "title": "Work: Thinking Critically reflective journal",
-      "location": "",
-      "type": "event",
-      "sortKey": 1793037600000,
-      "start": "2026-10-26T18:00:00.000Z",
-      "end": "2026-10-26T18:30:00.000Z"
-    },
     {
       "id": "primary:M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation:2026-10-27T16:00:00.000Z",
       "date": "2026-10-27",
