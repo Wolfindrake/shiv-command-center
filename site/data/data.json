@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T12:13:16.813Z",
+  "generatedAt": "2026-10-27T18:02:25.054Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation:2026-10-27T16:00:00.000Z",
-      "date": "2026-10-27",
-      "time": "17:00",
-      "title": "M&A Lab: Early Stage Deal Screening - Valuation, synergies and value creation",
-      "location": "Maria de Molina, 31, MM-601, Madrid",
-      "type": "event",
-      "sortKey": 1793116800000,
-      "start": "2026-10-27T16:00:00.000Z",
-      "end": "2026-10-27T18:50:00.000Z"
-    },
     {
       "id": "primary:DUE: Thinking Critically, Reflective journal (Block 1):2026-10-28T00:00:00.000Z",
       "date": "2026-10-28",
