@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T22:15:17.424Z",
+  "generatedAt": "2026-10-28T05:44:08.643Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:DUE: Thinking Critically, Reflective journal (Block 1):2026-10-28T00:00:00.000Z",
-      "date": "2026-10-28",
-      "time": "All day",
-      "title": "DUE: Thinking Critically, Reflective journal (Block 1)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1793145600000,
-      "start": "2026-10-28T00:00:00.000Z",
-      "end": "2026-10-29T00:00:00.000Z"
-    },
     {
       "id": "primary:Review: Today's classes:2026-10-28T19:00:00.000Z",
       "date": "2026-10-28",
