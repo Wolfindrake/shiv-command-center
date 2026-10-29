@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T13:03:24.617Z",
+  "generatedAt": "2026-10-29T22:46:09.195Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,48 +27,26 @@
   ],
   "scheduleFeed": [
     {
-      "id": "primary:Review: Thu 29 Oct classes:2026-10-29T15:00:00.000Z",
-      "date": "2026-10-29",
+      "id": "primary:Review: Fri 30 Oct classes:2026-10-30T15:00:00.000Z",
+      "date": "2026-10-30",
       "time": "16:00",
-      "title": "Review: Thu 29 Oct classes",
+      "title": "Review: Fri 30 Oct classes",
       "location": "",
       "type": "event",
-      "sortKey": 1793286000000,
-      "start": "2026-10-29T15:00:00.000Z",
-      "end": "2026-10-29T16:00:00.000Z"
+      "sortKey": 1793372400000,
+      "start": "2026-10-30T15:00:00.000Z",
+      "end": "2026-10-30T16:00:00.000Z"
     },
     {
-      "id": "primary:Consulting Masterclass with Kashish Malhotra: Getting Started with Case Interviews:2026-10-29T16:00:00.000Z",
-      "date": "2026-10-29",
+      "id": "primary:Break:2026-10-30T16:00:00.000Z",
+      "date": "2026-10-30",
       "time": "17:00",
-      "title": "Consulting Masterclass with Kashish Malhotra: Getting Started with Case Interviews",
-      "location": "Online Event (IE Connect)",
-      "type": "event",
-      "sortKey": 1793289600000,
-      "start": "2026-10-29T16:00:00.000Z",
-      "end": "2026-10-29T17:00:00.000Z"
-    },
-    {
-      "id": "primary:Break:2026-10-29T17:00:00.000Z",
-      "date": "2026-10-29",
-      "time": "18:00",
       "title": "Break",
       "location": "",
       "type": "event",
-      "sortKey": 1793293200000,
-      "start": "2026-10-29T17:00:00.000Z",
-      "end": "2026-10-29T17:15:00.000Z"
-    },
-    {
-      "id": "primary:Prep: Entrepreneurship, Moving People:2026-10-29T17:15:00.000Z",
-      "date": "2026-10-29",
-      "time": "18:15",
-      "title": "Prep: Entrepreneurship, Moving People",
-      "location": "",
-      "type": "event",
-      "sortKey": 1793294100000,
-      "start": "2026-10-29T17:15:00.000Z",
-      "end": "2026-10-29T18:30:00.000Z"
+      "sortKey": 1793376000000,
+      "start": "2026-10-30T16:00:00.000Z",
+      "end": "2026-10-30T16:15:00.000Z"
     },
     {
       "id": "primary:Deep dive: Financial Markets:2026-10-31T12:00:00.000Z",
