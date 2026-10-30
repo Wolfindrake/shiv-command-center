@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T05:50:50.366Z",
+  "generatedAt": "2026-10-30T12:57:11.074Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -135,6 +135,17 @@
       "sortKey": 1794657600000,
       "start": "2026-11-14T12:00:00.000Z",
       "end": "2026-11-14T15:00:00.000Z"
+    },
+    {
+      "id": "primary:Deep dive: Operations Management:2026-11-21T12:00:00.000Z",
+      "date": "2026-11-21",
+      "time": "13:00",
+      "title": "Deep dive: Operations Management",
+      "location": "",
+      "type": "event",
+      "sortKey": 1795262400000,
+      "start": "2026-11-21T12:00:00.000Z",
+      "end": "2026-11-21T15:00:00.000Z"
     }
   ],
   "realDeadlines": []
