@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T06:06:12.602Z",
+  "generatedAt": "2026-11-02T15:55:15.954Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Work: Reflective journal Block 2 (ISA - Thinking Critically):2026-11-02T08:00:00.000Z",
-      "date": "2026-11-02",
-      "time": "09:00",
-      "title": "Work: Reflective journal Block 2 (ISA - Thinking Critically)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1793606400000,
-      "start": "2026-11-02T08:00:00.000Z",
-      "end": "2026-11-02T08:30:00.000Z"
-    },
-    {
-      "id": "primary:Work: Benihana Simulation (Operations Mgmt):2026-11-02T09:00:00.000Z",
-      "date": "2026-11-02",
-      "time": "10:00",
-      "title": "Work: Benihana Simulation (Operations Mgmt)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1793610000000,
-      "start": "2026-11-02T09:00:00.000Z",
-      "end": "2026-11-02T10:30:00.000Z"
-    },
     {
       "id": "primary:M&A Lab: Structuring the Right Deal I & II - Transaction Forms & Price-Risk Bridges:2026-11-03T16:00:00.000Z",
       "date": "2026-11-03",
@@ -80,6 +58,17 @@
       "sortKey": 1793750400000,
       "start": "2026-11-04T00:00:00.000Z",
       "end": "2026-11-05T00:00:00.000Z"
+    },
+    {
+      "id": "primary:CV Clinic (IMBA Careers): slot time TBC by email:2026-11-05T14:00:00.000Z",
+      "date": "2026-11-05",
+      "time": "15:00",
+      "title": "CV Clinic (IMBA Careers): slot time TBC by email",
+      "location": "",
+      "type": "event",
+      "sortKey": 1793887200000,
+      "start": "2026-11-05T14:00:00.000Z",
+      "end": "2026-11-05T16:00:00.000Z"
     },
     {
       "id": "primary:Deep dive: Marketing Management:2026-11-07T12:00:00.000Z",
