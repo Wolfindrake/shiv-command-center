@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T14:17:07.733Z",
+  "generatedAt": "2026-11-03T23:25:08.097Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,21 +27,10 @@
   ],
   "scheduleFeed": [
     {
-      "id": "primary:M&A Lab: Structuring the Right Deal I & II - Transaction Forms & Price-Risk Bridges:2026-11-03T16:00:00.000Z",
-      "date": "2026-11-03",
-      "time": "17:00",
-      "title": "M&A Lab: Structuring the Right Deal I & II - Transaction Forms & Price-Risk Bridges",
-      "location": "Maria de Molina, 13, Aula Magna, Madrid",
-      "type": "event",
-      "sortKey": 1793721600000,
-      "start": "2026-11-03T16:00:00.000Z",
-      "end": "2026-11-03T18:50:00.000Z"
-    },
-    {
-      "id": "primary:DUE: ISA - Thinking Critically, Reflective journal (Block 2):2026-11-04T00:00:00.000Z",
+      "id": "primary:DUE: Operations Mgmt, Benihana Simulation:2026-11-04T00:00:00.000Z",
       "date": "2026-11-04",
       "time": "All day",
-      "title": "DUE: ISA - Thinking Critically, Reflective journal (Block 2)",
+      "title": "DUE: Operations Mgmt, Benihana Simulation",
       "location": "",
       "type": "event",
       "sortKey": 1793750400000,
@@ -49,10 +38,10 @@
       "end": "2026-11-05T00:00:00.000Z"
     },
     {
-      "id": "primary:DUE: Operations Mgmt, Benihana Simulation:2026-11-04T00:00:00.000Z",
+      "id": "primary:DUE: ISA - Thinking Critically, Reflective journal (Block 2):2026-11-04T00:00:00.000Z",
       "date": "2026-11-04",
       "time": "All day",
-      "title": "DUE: Operations Mgmt, Benihana Simulation",
+      "title": "DUE: ISA - Thinking Critically, Reflective journal (Block 2)",
       "location": "",
       "type": "event",
       "sortKey": 1793750400000,
@@ -157,6 +146,17 @@
       "sortKey": 1795262400000,
       "start": "2026-11-21T12:00:00.000Z",
       "end": "2026-11-21T15:00:00.000Z"
+    },
+    {
+      "id": "primary:M&A Lab: Closing Mechanics & Post Deal Value Tracking Course Wrap Up:2026-11-25T16:00:00.000Z",
+      "date": "2026-11-25",
+      "time": "17:00",
+      "title": "M&A Lab: Closing Mechanics & Post Deal Value Tracking Course Wrap Up",
+      "location": "Maria de Molina, 31, MM-601, Madrid",
+      "type": "event",
+      "sortKey": 1795622400000,
+      "start": "2026-11-25T16:00:00.000Z",
+      "end": "2026-11-25T18:50:00.000Z"
     }
   ],
   "realDeadlines": []
