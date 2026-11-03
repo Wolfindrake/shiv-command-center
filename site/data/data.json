@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:58:39.823Z",
+  "generatedAt": "2026-11-03T14:17:07.733Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -38,10 +38,10 @@
       "end": "2026-11-03T18:50:00.000Z"
     },
     {
-      "id": "primary:DUE: Operations Mgmt, Benihana Simulation:2026-11-04T00:00:00.000Z",
+      "id": "primary:DUE: ISA - Thinking Critically, Reflective journal (Block 2):2026-11-04T00:00:00.000Z",
       "date": "2026-11-04",
       "time": "All day",
-      "title": "DUE: Operations Mgmt, Benihana Simulation",
+      "title": "DUE: ISA - Thinking Critically, Reflective journal (Block 2)",
       "location": "",
       "type": "event",
       "sortKey": 1793750400000,
@@ -49,10 +49,10 @@
       "end": "2026-11-05T00:00:00.000Z"
     },
     {
-      "id": "primary:DUE: ISA - Thinking Critically, Reflective journal (Block 2):2026-11-04T00:00:00.000Z",
+      "id": "primary:DUE: Operations Mgmt, Benihana Simulation:2026-11-04T00:00:00.000Z",
       "date": "2026-11-04",
       "time": "All day",
-      "title": "DUE: ISA - Thinking Critically, Reflective journal (Block 2)",
+      "title": "DUE: Operations Mgmt, Benihana Simulation",
       "location": "",
       "type": "event",
       "sortKey": 1793750400000,
@@ -69,6 +69,17 @@
       "sortKey": 1793887200000,
       "start": "2026-11-05T14:00:00.000Z",
       "end": "2026-11-05T16:00:00.000Z"
+    },
+    {
+      "id": "primary:Venture Network: The Truth Behind F1 (registered):2026-11-05T18:00:00.000Z",
+      "date": "2026-11-05",
+      "time": "19:00",
+      "title": "Venture Network: The Truth Behind F1 (registered)",
+      "location": "IE Tower, 24th Floor, Paseo de la Castellana 259E, Madrid",
+      "type": "event",
+      "sortKey": 1793901600000,
+      "start": "2026-11-05T18:00:00.000Z",
+      "end": "2026-11-05T20:00:00.000Z"
     },
     {
       "id": "primary:Deep dive: Marketing Management:2026-11-07T12:00:00.000Z",
@@ -124,6 +135,17 @@
       "sortKey": 1794657600000,
       "start": "2026-11-14T12:00:00.000Z",
       "end": "2026-11-14T15:00:00.000Z"
+    },
+    {
+      "id": "primary:Tata Global Internships info session (registered, Zoom):2026-11-16T14:30:00.000Z",
+      "date": "2026-11-16",
+      "time": "15:30",
+      "title": "Tata Global Internships info session (registered, Zoom)",
+      "location": "https://ieuniversity.zoom.us/j/92110107310",
+      "type": "event",
+      "sortKey": 1794839400000,
+      "start": "2026-11-16T14:30:00.000Z",
+      "end": "2026-11-16T15:30:00.000Z"
     },
     {
       "id": "primary:Deep dive: Operations Management:2026-11-21T12:00:00.000Z",
