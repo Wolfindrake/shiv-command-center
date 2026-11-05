@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T06:48:04.625Z",
+  "generatedAt": "2026-11-05T19:58:40.700Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:CV Clinic (IMBA Careers): slot time TBC by email:2026-11-05T14:00:00.000Z",
-      "date": "2026-11-05",
-      "time": "15:00",
-      "title": "CV Clinic (IMBA Careers): slot time TBC by email",
-      "location": "",
-      "type": "event",
-      "sortKey": 1793887200000,
-      "start": "2026-11-05T14:00:00.000Z",
-      "end": "2026-11-05T16:00:00.000Z"
-    },
-    {
-      "id": "primary:Venture Network: The Truth Behind F1 (registered):2026-11-05T18:00:00.000Z",
-      "date": "2026-11-05",
-      "time": "19:00",
-      "title": "Venture Network: The Truth Behind F1 (registered)",
-      "location": "IE Tower, 24th Floor, Paseo de la Castellana 259E, Madrid",
-      "type": "event",
-      "sortKey": 1793901600000,
-      "start": "2026-11-05T18:00:00.000Z",
-      "end": "2026-11-05T20:00:00.000Z"
-    },
     {
       "id": "primary:Deep dive: Marketing Management:2026-11-07T12:00:00.000Z",
       "date": "2026-11-07",
