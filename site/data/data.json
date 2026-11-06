@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T06:48:41.363Z",
+  "generatedAt": "2026-11-06T19:25:21.616Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -113,6 +113,17 @@
       "sortKey": 1795622400000,
       "start": "2026-11-25T16:00:00.000Z",
       "end": "2026-11-25T18:50:00.000Z"
+    },
+    {
+      "id": "primary:Deep dive: Strategy:2026-11-28T12:00:00.000Z",
+      "date": "2026-11-28",
+      "time": "13:00",
+      "title": "Deep dive: Strategy",
+      "location": "",
+      "type": "event",
+      "sortKey": 1795867200000,
+      "start": "2026-11-28T12:00:00.000Z",
+      "end": "2026-11-28T15:00:00.000Z"
     }
   ],
   "realDeadlines": []
