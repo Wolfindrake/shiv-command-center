@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T05:59:15.670Z",
+  "generatedAt": "2026-11-07T13:03:10.868Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Deep dive: Marketing Management:2026-11-07T12:00:00.000Z",
-      "date": "2026-11-07",
-      "time": "13:00",
-      "title": "Deep dive: Marketing Management",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794052800000,
-      "start": "2026-11-07T12:00:00.000Z",
-      "end": "2026-11-07T15:00:00.000Z"
-    },
     {
       "id": "primary:Work: Benihana Simulation (Operations Mgmt):2026-11-09T09:00:00.000Z",
       "date": "2026-11-09",
