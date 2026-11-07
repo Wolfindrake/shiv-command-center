@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:25:21.616Z",
+  "generatedAt": "2026-11-07T05:59:15.670Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -36,6 +36,17 @@
       "sortKey": 1794052800000,
       "start": "2026-11-07T12:00:00.000Z",
       "end": "2026-11-07T15:00:00.000Z"
+    },
+    {
+      "id": "primary:Work: Benihana Simulation (Operations Mgmt):2026-11-09T09:00:00.000Z",
+      "date": "2026-11-09",
+      "time": "10:00",
+      "title": "Work: Benihana Simulation (Operations Mgmt)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1794214800000,
+      "start": "2026-11-09T09:00:00.000Z",
+      "end": "2026-11-09T10:30:00.000Z"
     },
     {
       "id": "primary:Click! Starter Kata (Group 6):2026-11-10T19:45:00.000Z",
@@ -124,6 +135,17 @@
       "sortKey": 1795867200000,
       "start": "2026-11-28T12:00:00.000Z",
       "end": "2026-11-28T15:00:00.000Z"
+    },
+    {
+      "id": "primary:Case Presentation (Group 6 — term deliverable):2026-11-28T19:45:00.000Z",
+      "date": "2026-11-28",
+      "time": "20:45",
+      "title": "Case Presentation (Group 6 — term deliverable)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1795895100000,
+      "start": "2026-11-28T19:45:00.000Z",
+      "end": "2026-11-28T21:15:00.000Z"
     }
   ],
   "realDeadlines": []
