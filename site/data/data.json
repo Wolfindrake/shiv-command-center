@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T21:51:55.713Z",
+  "generatedAt": "2026-11-08T06:02:14.012Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -135,6 +135,17 @@
       "sortKey": 1795895100000,
       "start": "2026-11-28T19:45:00.000Z",
       "end": "2026-11-28T21:15:00.000Z"
+    },
+    {
+      "id": "primary:DUE: Operations Mgmt, Group Case Presentation:2026-11-30T00:00:00.000Z",
+      "date": "2026-11-30",
+      "time": "All day",
+      "title": "DUE: Operations Mgmt, Group Case Presentation",
+      "location": "",
+      "type": "event",
+      "sortKey": 1795996800000,
+      "start": "2026-11-30T00:00:00.000Z",
+      "end": "2026-12-01T00:00:00.000Z"
     }
   ],
   "realDeadlines": []
