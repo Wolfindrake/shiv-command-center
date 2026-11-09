@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:31:54.010Z",
+  "generatedAt": "2026-11-09T22:23:08.922Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Work: Benihana Simulation (Operations Mgmt):2026-11-09T09:00:00.000Z",
-      "date": "2026-11-09",
-      "time": "10:00",
-      "title": "Work: Benihana Simulation (Operations Mgmt)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794214800000,
-      "start": "2026-11-09T09:00:00.000Z",
-      "end": "2026-11-09T10:30:00.000Z"
-    },
     {
       "id": "primary:Click! Starter Kata (Group 6):2026-11-10T19:45:00.000Z",
       "date": "2026-11-10",
@@ -146,6 +135,17 @@
       "sortKey": 1795996800000,
       "start": "2026-11-30T00:00:00.000Z",
       "end": "2026-12-01T00:00:00.000Z"
+    },
+    {
+      "id": "primary:M&A Lab: Final Presentations:2026-12-01T17:00:00.000Z",
+      "date": "2026-12-01",
+      "time": "18:00",
+      "title": "M&A Lab: Final Presentations",
+      "location": "Maria de Molina, 13, Aula Magna, Madrid",
+      "type": "event",
+      "sortKey": 1796144400000,
+      "start": "2026-12-01T17:00:00.000Z",
+      "end": "2026-12-01T20:00:00.000Z"
     }
   ],
   "realDeadlines": []
