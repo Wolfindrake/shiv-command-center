@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T07:19:58.219Z",
+  "generatedAt": "2026-11-10T19:45:02.088Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -27,15 +27,37 @@
   ],
   "scheduleFeed": [
     {
-      "id": "primary:Click! Starter Kata (Group 6):2026-11-10T19:45:00.000Z",
+      "id": "primary:Study: Financial Reporting and Analysis, part 2:2026-11-10T20:15:00.000Z",
       "date": "2026-11-10",
-      "time": "20:45",
-      "title": "Click! Starter Kata (Group 6)",
+      "time": "21:15",
+      "title": "Study: Financial Reporting and Analysis, part 2",
       "location": "",
       "type": "event",
-      "sortKey": 1794339900000,
-      "start": "2026-11-10T19:45:00.000Z",
+      "sortKey": 1794341700000,
+      "start": "2026-11-10T20:15:00.000Z",
       "end": "2026-11-10T20:45:00.000Z"
+    },
+    {
+      "id": "primary:Study: Innovation in a Digital World:2026-11-10T20:45:00.000Z",
+      "date": "2026-11-10",
+      "time": "21:45",
+      "title": "Study: Innovation in a Digital World",
+      "location": "",
+      "type": "event",
+      "sortKey": 1794343500000,
+      "start": "2026-11-10T20:45:00.000Z",
+      "end": "2026-11-10T21:15:00.000Z"
+    },
+    {
+      "id": "primary:Prep: tomorrow's classes, part 2:2026-11-10T21:15:00.000Z",
+      "date": "2026-11-10",
+      "time": "22:15",
+      "title": "Prep: tomorrow's classes, part 2",
+      "location": "",
+      "type": "event",
+      "sortKey": 1794345300000,
+      "start": "2026-11-10T21:15:00.000Z",
+      "end": "2026-11-10T22:15:00.000Z"
     },
     {
       "id": "primary:DUE: Operations Mgmt, Benihana Simulation:2026-11-11T00:00:00.000Z",
