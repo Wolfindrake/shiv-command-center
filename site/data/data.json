@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T07:12:18.280Z",
+  "generatedAt": "2026-11-12T19:55:28.957Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,39 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Operations practice problems (Friday test):2026-11-12T09:20:00.000Z",
-      "date": "2026-11-12",
-      "time": "10:20",
-      "title": "Study: Operations practice problems (Friday test)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794475200000,
-      "start": "2026-11-12T09:20:00.000Z",
-      "end": "2026-11-12T11:00:00.000Z"
-    },
-    {
-      "id": "primary:Study: Operations timed mock (Friday test):2026-11-12T17:00:00.000Z",
-      "date": "2026-11-12",
-      "time": "18:00",
-      "title": "Study: Operations timed mock (Friday test)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794502800000,
-      "start": "2026-11-12T17:00:00.000Z",
-      "end": "2026-11-12T18:30:00.000Z"
-    },
-    {
-      "id": "primary:Prep: tomorrow's class (Financial Markets):2026-11-12T19:15:00.000Z",
-      "date": "2026-11-12",
-      "time": "20:15",
-      "title": "Prep: tomorrow's class (Financial Markets)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794510900000,
-      "start": "2026-11-12T19:15:00.000Z",
-      "end": "2026-11-12T20:15:00.000Z"
-    },
     {
       "id": "primary:Study: Financial Reporting presentation slides:2026-11-12T20:30:00.000Z",
       "date": "2026-11-12",
