@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T06:46:39.809Z",
+  "generatedAt": "2026-11-13T19:43:22.782Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,39 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Operations light review before test:2026-11-13T09:20:00.000Z",
-      "date": "2026-11-13",
-      "time": "10:20",
-      "title": "Study: Operations light review before test",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794561600000,
-      "start": "2026-11-13T09:20:00.000Z",
-      "end": "2026-11-13T10:30:00.000Z"
-    },
-    {
-      "id": "primary:Work: Operations presentation with group:2026-11-13T16:00:00.000Z",
-      "date": "2026-11-13",
-      "time": "17:00",
-      "title": "Work: Operations presentation with group",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794585600000,
-      "start": "2026-11-13T16:00:00.000Z",
-      "end": "2026-11-13T18:00:00.000Z"
-    },
-    {
-      "id": "primary:Study: Financial Reporting:2026-11-13T19:00:00.000Z",
-      "date": "2026-11-13",
-      "time": "20:00",
-      "title": "Study: Financial Reporting",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794596400000,
-      "start": "2026-11-13T19:00:00.000Z",
-      "end": "2026-11-13T20:00:00.000Z"
-    },
     {
       "id": "primary:Study: Marketing Management:2026-11-13T20:45:00.000Z",
       "date": "2026-11-13",
@@ -454,6 +421,17 @@
       "sortKey": 1796144400000,
       "start": "2026-12-01T17:00:00.000Z",
       "end": "2026-12-01T20:00:00.000Z"
+    },
+    {
+      "id": "primary:Work: Process Analytics 2nd Deliverable (Operations Mgmt):2026-12-05T10:30:00.000Z",
+      "date": "2026-12-05",
+      "time": "11:30",
+      "title": "Work: Process Analytics 2nd Deliverable (Operations Mgmt)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1796466600000,
+      "start": "2026-12-05T10:30:00.000Z",
+      "end": "2026-12-05T12:00:00.000Z"
     }
   ],
   "realDeadlines": []
