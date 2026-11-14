@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:03:28.818Z",
+  "generatedAt": "2026-11-14T22:25:11.618Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Financial Markets test prep:2026-11-14T18:30:00.000Z",
-      "date": "2026-11-14",
-      "time": "19:30",
-      "title": "Study: Financial Markets test prep",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794681000000,
-      "start": "2026-11-14T18:30:00.000Z",
-      "end": "2026-11-14T20:20:00.000Z"
-    },
-    {
-      "id": "primary:Study: Marketing Management:2026-11-14T20:30:00.000Z",
-      "date": "2026-11-14",
-      "time": "21:30",
-      "title": "Study: Marketing Management",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794688200000,
-      "start": "2026-11-14T20:30:00.000Z",
-      "end": "2026-11-14T21:20:00.000Z"
-    },
     {
       "id": "primary:Study: Marketing midterm revision (sessions 1 to 6):2026-11-15T07:30:00.000Z",
       "date": "2026-11-15",
