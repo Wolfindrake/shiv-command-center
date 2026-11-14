@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T19:43:22.782Z",
+  "generatedAt": "2026-11-14T06:24:48.684Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Marketing Management:2026-11-13T20:45:00.000Z",
-      "date": "2026-11-13",
-      "time": "21:45",
-      "title": "Study: Marketing Management",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794602700000,
-      "start": "2026-11-13T20:45:00.000Z",
-      "end": "2026-11-13T21:45:00.000Z"
-    },
     {
       "id": "primary:Work: Operations presentation slides and group rehearsal:2026-11-14T07:00:00.000Z",
       "date": "2026-11-14",
