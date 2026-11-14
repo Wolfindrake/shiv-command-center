@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T06:24:48.684Z",
+  "generatedAt": "2026-11-14T18:03:28.818Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,39 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Work: Operations presentation slides and group rehearsal:2026-11-14T07:00:00.000Z",
-      "date": "2026-11-14",
-      "time": "08:00",
-      "title": "Work: Operations presentation slides and group rehearsal",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794639600000,
-      "start": "2026-11-14T07:00:00.000Z",
-      "end": "2026-11-14T11:00:00.000Z"
-    },
-    {
-      "id": "primary:Deep dive: Financial Reporting and Analysis:2026-11-14T12:00:00.000Z",
-      "date": "2026-11-14",
-      "time": "13:00",
-      "title": "Deep dive: Financial Reporting and Analysis",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794657600000,
-      "start": "2026-11-14T12:00:00.000Z",
-      "end": "2026-11-14T15:00:00.000Z"
-    },
-    {
-      "id": "primary:Work: Financial Reporting presentation slides:2026-11-14T15:00:00.000Z",
-      "date": "2026-11-14",
-      "time": "16:00",
-      "title": "Work: Financial Reporting presentation slides",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794668400000,
-      "start": "2026-11-14T15:00:00.000Z",
-      "end": "2026-11-14T17:00:00.000Z"
-    },
     {
       "id": "primary:Study: Financial Markets test prep:2026-11-14T18:30:00.000Z",
       "date": "2026-11-14",
