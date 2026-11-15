@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T22:25:11.618Z",
+  "generatedAt": "2026-11-15T06:33:47.339Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -366,6 +366,17 @@
       "sortKey": 1796466600000,
       "start": "2026-12-05T10:30:00.000Z",
       "end": "2026-12-05T12:00:00.000Z"
+    },
+    {
+      "id": "primary:DUE: Operations Mgmt, Process Analytics 2nd Deliverable:2026-12-07T00:00:00.000Z",
+      "date": "2026-12-07",
+      "time": "All day",
+      "title": "DUE: Operations Mgmt, Process Analytics 2nd Deliverable",
+      "location": "",
+      "type": "event",
+      "sortKey": 1796601600000,
+      "start": "2026-12-07T00:00:00.000Z",
+      "end": "2026-12-08T00:00:00.000Z"
     }
   ],
   "realDeadlines": []
