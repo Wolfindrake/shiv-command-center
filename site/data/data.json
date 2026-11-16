@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T06:31:27.621Z",
+  "generatedAt": "2026-11-16T22:03:25.236Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,61 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Financial Reporting test review:2026-11-16T07:00:00.000Z",
-      "date": "2026-11-16",
-      "time": "08:00",
-      "title": "Study: Financial Reporting test review",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794812400000,
-      "start": "2026-11-16T07:00:00.000Z",
-      "end": "2026-11-16T10:00:00.000Z"
-    },
-    {
-      "id": "primary:Tata Global Internships info session (registered, Zoom):2026-11-16T14:30:00.000Z",
-      "date": "2026-11-16",
-      "time": "15:30",
-      "title": "Tata Global Internships info session (registered, Zoom)",
-      "location": "https://ieuniversity.zoom.us/j/92110107310",
-      "type": "event",
-      "sortKey": 1794839400000,
-      "start": "2026-11-16T14:30:00.000Z",
-      "end": "2026-11-16T15:30:00.000Z"
-    },
-    {
-      "id": "primary:Work: Financial Reporting presentation rehearsal:2026-11-16T17:00:00.000Z",
-      "date": "2026-11-16",
-      "time": "18:00",
-      "title": "Work: Financial Reporting presentation rehearsal",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794848400000,
-      "start": "2026-11-16T17:00:00.000Z",
-      "end": "2026-11-16T18:30:00.000Z"
-    },
-    {
-      "id": "primary:Prep: tomorrow's classes (Tuesday):2026-11-16T19:15:00.000Z",
-      "date": "2026-11-16",
-      "time": "20:15",
-      "title": "Prep: tomorrow's classes (Tuesday)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794856500000,
-      "start": "2026-11-16T19:15:00.000Z",
-      "end": "2026-11-16T20:15:00.000Z"
-    },
-    {
-      "id": "primary:Study: Financial Reporting test last pass:2026-11-16T20:30:00.000Z",
-      "date": "2026-11-16",
-      "time": "21:30",
-      "title": "Study: Financial Reporting test last pass",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794861000000,
-      "start": "2026-11-16T20:30:00.000Z",
-      "end": "2026-11-16T22:30:00.000Z"
-    },
     {
       "id": "primary:Study: Financial Reporting last pass (presentation and test today):2026-11-17T04:45:00.000Z",
       "date": "2026-11-17",
