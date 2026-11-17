@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T22:03:25.236Z",
+  "generatedAt": "2026-11-17T07:56:16.133Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Financial Reporting last pass (presentation and test today):2026-11-17T04:45:00.000Z",
-      "date": "2026-11-17",
-      "time": "05:45",
-      "title": "Study: Financial Reporting last pass (presentation and test today)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794890700000,
-      "start": "2026-11-17T04:45:00.000Z",
-      "end": "2026-11-17T06:00:00.000Z"
-    },
     {
       "id": "primary:Study: Marketing revision:2026-11-17T09:20:00.000Z",
       "date": "2026-11-17",
