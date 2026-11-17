@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T07:56:16.133Z",
+  "generatedAt": "2026-11-17T20:56:17.548Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,50 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Marketing revision:2026-11-17T09:20:00.000Z",
-      "date": "2026-11-17",
-      "time": "10:20",
-      "title": "Study: Marketing revision",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794907200000,
-      "start": "2026-11-17T09:20:00.000Z",
-      "end": "2026-11-17T11:00:00.000Z"
-    },
-    {
-      "id": "primary:Study: Marketing sessions 7 to 10:2026-11-17T17:00:00.000Z",
-      "date": "2026-11-17",
-      "time": "18:00",
-      "title": "Study: Marketing sessions 7 to 10",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794934800000,
-      "start": "2026-11-17T17:00:00.000Z",
-      "end": "2026-11-17T18:30:00.000Z"
-    },
-    {
-      "id": "primary:Prep: tomorrow's classes (Wednesday):2026-11-17T19:15:00.000Z",
-      "date": "2026-11-17",
-      "time": "20:15",
-      "title": "Prep: tomorrow's classes (Wednesday)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794942900000,
-      "start": "2026-11-17T19:15:00.000Z",
-      "end": "2026-11-17T20:15:00.000Z"
-    },
-    {
-      "id": "primary:Study: Marketing practice questions:2026-11-17T20:30:00.000Z",
-      "date": "2026-11-17",
-      "time": "21:30",
-      "title": "Study: Marketing practice questions",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794947400000,
-      "start": "2026-11-17T20:30:00.000Z",
-      "end": "2026-11-17T22:30:00.000Z"
-    },
     {
       "id": "primary:Study: Marketing Management:2026-11-18T05:15:00.000Z",
       "date": "2026-11-18",
@@ -168,6 +124,17 @@
       "sortKey": 1795262400000,
       "start": "2026-11-21T12:00:00.000Z",
       "end": "2026-11-21T15:00:00.000Z"
+    },
+    {
+      "id": "primary:Leadership meeting with izaskun:2026-11-23T17:00:00.000Z",
+      "date": "2026-11-23",
+      "time": "18:00",
+      "title": "Leadership meeting with izaskun",
+      "location": "",
+      "type": "event",
+      "sortKey": 1795453200000,
+      "start": "2026-11-23T17:00:00.000Z",
+      "end": "2026-11-23T18:00:00.000Z"
     },
     {
       "id": "primary:M&A Lab: Closing Mechanics & Post Deal Value Tracking Course Wrap Up:2026-11-25T16:00:00.000Z",
