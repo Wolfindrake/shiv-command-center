@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T20:56:17.548Z",
+  "generatedAt": "2026-11-18T07:29:56.360Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Marketing Management:2026-11-18T05:15:00.000Z",
-      "date": "2026-11-18",
-      "time": "06:15",
-      "title": "Study: Marketing Management",
-      "location": "",
-      "type": "event",
-      "sortKey": 1794978900000,
-      "start": "2026-11-18T05:15:00.000Z",
-      "end": "2026-11-18T06:00:00.000Z"
-    },
     {
       "id": "primary:Study: Marketing practice questions:2026-11-18T09:20:00.000Z",
       "date": "2026-11-18",
