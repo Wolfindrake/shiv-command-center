@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T20:32:21.839Z",
+  "generatedAt": "2026-11-19T07:27:43.565Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Marketing midterm final review (exam today 13:30):2026-11-19T04:45:00.000Z",
-      "date": "2026-11-19",
-      "time": "05:45",
-      "title": "Study: Marketing midterm final review (exam today 13:30)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795063500000,
-      "start": "2026-11-19T04:45:00.000Z",
-      "end": "2026-11-19T10:30:00.000Z"
-    },
     {
       "id": "primary:Study: Financial Markets test prep:2026-11-19T17:30:00.000Z",
       "date": "2026-11-19",
