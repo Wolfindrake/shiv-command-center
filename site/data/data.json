@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T07:27:43.565Z",
+  "generatedAt": "2026-11-19T20:38:24.767Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Financial Markets test prep:2026-11-19T17:30:00.000Z",
-      "date": "2026-11-19",
-      "time": "18:30",
-      "title": "Study: Financial Markets test prep",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795109400000,
-      "start": "2026-11-19T17:30:00.000Z",
-      "end": "2026-11-19T22:30:00.000Z"
-    },
     {
       "id": "primary:Study: Financial Markets revision (test today 10:30):2026-11-20T04:45:00.000Z",
       "date": "2026-11-20",
@@ -146,6 +135,17 @@
       "sortKey": 1796601600000,
       "start": "2026-12-07T00:00:00.000Z",
       "end": "2026-12-08T00:00:00.000Z"
+    },
+    {
+      "id": "primary:Work: Project Management Simulation (Operations Mgmt):2026-12-11T15:00:00.000Z",
+      "date": "2026-12-11",
+      "time": "16:00",
+      "title": "Work: Project Management Simulation (Operations Mgmt)",
+      "location": "",
+      "type": "event",
+      "sortKey": 1797001200000,
+      "start": "2026-12-11T15:00:00.000Z",
+      "end": "2026-12-11T16:30:00.000Z"
     }
   ],
   "realDeadlines": []
