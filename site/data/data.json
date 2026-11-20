@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T20:38:24.767Z",
+  "generatedAt": "2026-11-20T07:17:44.420Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Financial Markets revision (test today 10:30):2026-11-20T04:45:00.000Z",
-      "date": "2026-11-20",
-      "time": "05:45",
-      "title": "Study: Financial Markets revision (test today 10:30)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795149900000,
-      "start": "2026-11-20T04:45:00.000Z",
-      "end": "2026-11-20T08:30:00.000Z"
-    },
     {
       "id": "primary:Deep dive: Operations Management:2026-11-21T12:00:00.000Z",
       "date": "2026-11-21",
