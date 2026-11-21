@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T20:22:38.237Z",
+  "generatedAt": "2026-11-21T07:09:56.594Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -135,6 +135,17 @@
       "sortKey": 1797001200000,
       "start": "2026-12-11T15:00:00.000Z",
       "end": "2026-12-11T16:30:00.000Z"
+    },
+    {
+      "id": "primary:DUE: Operations Mgmt, Project Management Simulation:2026-12-13T00:00:00.000Z",
+      "date": "2026-12-13",
+      "time": "All day",
+      "title": "DUE: Operations Mgmt, Project Management Simulation",
+      "location": "",
+      "type": "event",
+      "sortKey": 1797120000000,
+      "start": "2026-12-13T00:00:00.000Z",
+      "end": "2026-12-14T00:00:00.000Z"
     }
   ],
   "realDeadlines": []
