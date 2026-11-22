@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T06:50:10.572Z",
+  "generatedAt": "2026-11-22T19:41:32.151Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Prep: Strategy case reading (for Mon 09:00):2026-11-22T18:00:00.000Z",
-      "date": "2026-11-22",
-      "time": "19:00",
-      "title": "Prep: Strategy case reading (for Mon 09:00)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795370400000,
-      "start": "2026-11-22T18:00:00.000Z",
-      "end": "2026-11-22T19:30:00.000Z"
-    },
     {
       "id": "primary:Exercise: run or workout (30 min):2026-11-23T03:40:00.000Z",
       "date": "2026-11-23",
@@ -135,6 +124,17 @@
       "sortKey": 1795622400000,
       "start": "2026-11-25T16:00:00.000Z",
       "end": "2026-11-25T18:50:00.000Z"
+    },
+    {
+      "id": "primary:Prep class for fin markets:2026-11-25T16:30:00.000Z",
+      "date": "2026-11-25",
+      "time": "17:30",
+      "title": "Prep class for fin markets",
+      "location": "",
+      "type": "event",
+      "sortKey": 1795624200000,
+      "start": "2026-11-25T16:30:00.000Z",
+      "end": "2026-11-25T18:00:00.000Z"
     },
     {
       "id": "primary:Study: Financial Accounting (1 hour, paper exercises, timed):2026-11-25T19:45:00.000Z",
