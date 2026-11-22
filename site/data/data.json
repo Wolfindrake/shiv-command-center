@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T19:16:33.229Z",
+  "generatedAt": "2026-11-22T06:50:10.572Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Exercise: run or workout (30 min):2026-11-22T03:40:00.000Z",
-      "date": "2026-11-22",
-      "time": "04:40",
-      "title": "Exercise: run or workout (30 min)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795318800000,
-      "start": "2026-11-22T03:40:00.000Z",
-      "end": "2026-11-22T04:10:00.000Z"
-    },
     {
       "id": "primary:Prep: Strategy case reading (for Mon 09:00):2026-11-22T18:00:00.000Z",
       "date": "2026-11-22",
@@ -289,6 +278,17 @@
       "sortKey": 1797120000000,
       "start": "2026-12-13T00:00:00.000Z",
       "end": "2026-12-14T00:00:00.000Z"
+    },
+    {
+      "id": "primary:PDAL_Post + Group PM Simulation:2026-12-13T19:45:00.000Z",
+      "date": "2026-12-13",
+      "time": "20:45",
+      "title": "PDAL_Post + Group PM Simulation",
+      "location": "",
+      "type": "event",
+      "sortKey": 1797191100000,
+      "start": "2026-12-13T19:45:00.000Z",
+      "end": "2026-12-13T20:45:00.000Z"
     }
   ],
   "realDeadlines": []
