@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T19:41:32.151Z",
+  "generatedAt": "2026-11-23T07:40:42.178Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Exercise: run or workout (30 min):2026-11-23T03:40:00.000Z",
-      "date": "2026-11-23",
-      "time": "04:40",
-      "title": "Exercise: run or workout (30 min)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795405200000,
-      "start": "2026-11-23T03:40:00.000Z",
-      "end": "2026-11-23T04:10:00.000Z"
-    },
     {
       "id": "primary:Leadership meeting with izaskun:2026-11-23T17:00:00.000Z",
       "date": "2026-11-23",
