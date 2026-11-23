@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T07:40:42.178Z",
+  "generatedAt": "2026-11-23T23:54:43.910Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,39 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Leadership meeting with izaskun:2026-11-23T17:00:00.000Z",
-      "date": "2026-11-23",
-      "time": "18:00",
-      "title": "Leadership meeting with izaskun",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795453200000,
-      "start": "2026-11-23T17:00:00.000Z",
-      "end": "2026-11-23T18:00:00.000Z"
-    },
-    {
-      "id": "primary:Prep: Strategy case reading (for Tue 12:00):2026-11-23T18:30:00.000Z",
-      "date": "2026-11-23",
-      "time": "19:30",
-      "title": "Prep: Strategy case reading (for Tue 12:00)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795458600000,
-      "start": "2026-11-23T18:30:00.000Z",
-      "end": "2026-11-23T19:30:00.000Z"
-    },
-    {
-      "id": "primary:Study: Financial Accounting (30 min, paper exercises, timed):2026-11-23T19:30:00.000Z",
-      "date": "2026-11-23",
-      "time": "20:30",
-      "title": "Study: Financial Accounting (30 min, paper exercises, timed)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795462200000,
-      "start": "2026-11-23T19:30:00.000Z",
-      "end": "2026-11-23T20:00:00.000Z"
-    },
     {
       "id": "primary:Exercise: run or workout (30 min):2026-11-24T03:40:00.000Z",
       "date": "2026-11-24",
