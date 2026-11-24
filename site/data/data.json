@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T23:54:43.910Z",
+  "generatedAt": "2026-11-24T09:55:43.813Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Exercise: run or workout (30 min):2026-11-24T03:40:00.000Z",
-      "date": "2026-11-24",
-      "time": "04:40",
-      "title": "Exercise: run or workout (30 min)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795491600000,
-      "start": "2026-11-24T03:40:00.000Z",
-      "end": "2026-11-24T04:10:00.000Z"
-    },
     {
       "id": "primary:Study: Financial Accounting (1 hour, paper exercises, timed):2026-11-24T18:30:00.000Z",
       "date": "2026-11-24",
