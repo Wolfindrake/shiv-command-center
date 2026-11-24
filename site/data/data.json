@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T09:55:43.813Z",
+  "generatedAt": "2026-11-24T22:27:25.200Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Study: Financial Accounting (1 hour, paper exercises, timed):2026-11-24T18:30:00.000Z",
-      "date": "2026-11-24",
-      "time": "19:30",
-      "title": "Study: Financial Accounting (1 hour, paper exercises, timed)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795545000000,
-      "start": "2026-11-24T18:30:00.000Z",
-      "end": "2026-11-24T19:30:00.000Z"
-    },
-    {
-      "id": "primary:Study: Financial Markets (30 min, for Friday quiz):2026-11-24T19:30:00.000Z",
-      "date": "2026-11-24",
-      "time": "20:30",
-      "title": "Study: Financial Markets (30 min, for Friday quiz)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795548600000,
-      "start": "2026-11-24T19:30:00.000Z",
-      "end": "2026-11-24T20:00:00.000Z"
-    },
     {
       "id": "primary:Exercise: run or workout (30 min):2026-11-25T03:40:00.000Z",
       "date": "2026-11-25",
