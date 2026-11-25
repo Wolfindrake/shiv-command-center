@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T22:27:25.200Z",
+  "generatedAt": "2026-11-25T08:36:31.373Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,17 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Exercise: run or workout (30 min):2026-11-25T03:40:00.000Z",
-      "date": "2026-11-25",
-      "time": "04:40",
-      "title": "Exercise: run or workout (30 min)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795578000000,
-      "start": "2026-11-25T03:40:00.000Z",
-      "end": "2026-11-25T04:10:00.000Z"
-    },
     {
       "id": "primary:M&A Lab: Closing Mechanics & Post Deal Value Tracking Course Wrap Up:2026-11-25T16:00:00.000Z",
       "date": "2026-11-25",
