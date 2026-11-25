@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:36:31.373Z",
+  "generatedAt": "2026-11-25T21:42:37.851Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,39 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:M&A Lab: Closing Mechanics & Post Deal Value Tracking Course Wrap Up:2026-11-25T16:00:00.000Z",
-      "date": "2026-11-25",
-      "time": "17:00",
-      "title": "M&A Lab: Closing Mechanics & Post Deal Value Tracking Course Wrap Up",
-      "location": "Maria de Molina, 31, MM-601, Madrid",
-      "type": "event",
-      "sortKey": 1795622400000,
-      "start": "2026-11-25T16:00:00.000Z",
-      "end": "2026-11-25T18:50:00.000Z"
-    },
-    {
-      "id": "primary:Prep class for fin markets:2026-11-25T16:30:00.000Z",
-      "date": "2026-11-25",
-      "time": "17:30",
-      "title": "Prep class for fin markets",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795624200000,
-      "start": "2026-11-25T16:30:00.000Z",
-      "end": "2026-11-25T18:00:00.000Z"
-    },
-    {
-      "id": "primary:Study: Financial Accounting (1 hour, paper exercises, timed):2026-11-25T19:45:00.000Z",
-      "date": "2026-11-25",
-      "time": "20:45",
-      "title": "Study: Financial Accounting (1 hour, paper exercises, timed)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795635900000,
-      "start": "2026-11-25T19:45:00.000Z",
-      "end": "2026-11-25T20:45:00.000Z"
-    },
     {
       "id": "primary:Exercise: run or workout (30 min):2026-11-26T03:40:00.000Z",
       "date": "2026-11-26",
