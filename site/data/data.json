@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T07:50:24.147Z",
+  "generatedAt": "2026-11-28T20:04:12.999Z",
   "windowDays": 22,
   "ieFeedConfigured": false,
   "taskRows": [],
@@ -26,28 +26,6 @@
     }
   ],
   "scheduleFeed": [
-    {
-      "id": "primary:Deep dive: Strategy:2026-11-28T12:00:00.000Z",
-      "date": "2026-11-28",
-      "time": "13:00",
-      "title": "Deep dive: Strategy",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795867200000,
-      "start": "2026-11-28T12:00:00.000Z",
-      "end": "2026-11-28T15:00:00.000Z"
-    },
-    {
-      "id": "primary:Case Presentation (Group 6 — term deliverable):2026-11-28T19:45:00.000Z",
-      "date": "2026-11-28",
-      "time": "20:45",
-      "title": "Case Presentation (Group 6 — term deliverable)",
-      "location": "",
-      "type": "event",
-      "sortKey": 1795895100000,
-      "start": "2026-11-28T19:45:00.000Z",
-      "end": "2026-11-28T21:15:00.000Z"
-    },
     {
       "id": "primary:DUE: Operations Mgmt, Group Case Presentation:2026-11-30T00:00:00.000Z",
       "date": "2026-11-30",
